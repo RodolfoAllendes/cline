@@ -1,1 +1,75 @@
 /* You can add global styles to this file, and also import other style files */
+h1{
+  color: #84c754;
+}
+
+svg{
+  border: 2px dotted #84c754;
+  background-color: white;
+}
+
+text{
+  font-family: sans-serif;
+  stroke: none;
+  font-size: 15px;
+  text-anchor: start;
+  text-align: center;
+  vertical-align: top;
+  fill: black;
+}
+
+text.dendro-title{
+  font-size: large;
+  text-anchor: middle;
+}
+
+text.dendro-axis{
+  text-anchor: middle;
+  line-height: 20px;
+}
+
+text.dendro-cutoff{
+  text-anchor: middle;
+  line-height: 20px;
+}
+
+.node {
+  text-anchor: start;
+  alignment-baseline: middle;
+  vertical-align: center;
+}
+
+.internal {
+  fill: white;
+  stroke: black;
+}
+
+.leaf{
+  fill: steelblue;
+  stroke: none;
+}
+
+.flip{
+  text-anchor: end;
+}
+
+path{
+  stroke-width: 1px;
+  /* fill: none; */
+}
+
+path.dendro-axis{
+  stroke: black;
+  stroke: gray;
+}
+
+path.dendro-cutoff{
+  stroke: gray;
+  stroke-linecap: round;
+  stroke-dasharray: 5,3;
+}
+
+circle.dendro-cutoff {
+  fill: steelblue;
+  cursor: move;
+}

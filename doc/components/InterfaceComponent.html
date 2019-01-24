@@ -1,0 +1,2887 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>cline documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">cline documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <nav>
+
+    <ul class="list">
+
+        <li class="title">
+            <a href="index.html" data-type="index-link">cline documentation</a>
+        </li>
+
+        <li class="divider"></li>
+
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
+            <ul class="links">
+                    <li class="link">
+                        <a 
+                            
+                             href="overview.html" 
+                             href="overview.html" 
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-th"></span>Overview
+                        </a>
+                    </li>
+                    <li class="link">
+                      <a href="index.html" data-type="chapter-link"><span class="fa fa-file-text-o"></span>README</a>
+                    </li>
+                    <li class="link">
+                            <a href="license.html"
+                        data-type="chapter-link">
+                            <span class="fa fa-fw fa-file-text-o"></span>LICENSE
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="dependencies.html"
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-list"></span>Dependencies
+                        </a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter modules">
+            <a data-type="chapter-link" href="modules.html">
+                <div class="menu-toggler linked" data-toggle="collapse"
+                        data-target="#xs-modules-links"
+                >
+                    <span class="fa fa-fw fa-archive"></span>
+                    <span class="link-name">Modules</span>
+                    <span class="fa fa-angle-down"></span>
+                </div>
+            </a>
+            <ul class="links collapse"
+                    id="xs-modules-links"
+                >
+                    <li class="link">
+                        <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#xs-components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+                                    >
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="xs-components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+                                    >
+                                        <li class="link">
+                                            <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/CanvasComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">CanvasComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/InterfaceComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">InterfaceComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+            </ul>
+        </li>
+
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#xs-classes-links"
+                >
+                <span class="fa fa-fw fa-file-code-o"></span>
+                <span>Classes</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="xs-classes-links"
+                >
+                    <li class="link">
+                        <a href="classes/ClusterMatch.html" data-type="entity-link">ClusterMatch</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Dendrogram.html" data-type="entity-link">Dendrogram</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Extras.html" data-type="entity-link">Extras</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Utils.html" data-type="entity-link">Utils</a>
+                    </li>
+            </ul>
+        </li>
+
+
+
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#xs-miscellaneous-links"
+                >
+                <span class="fa fa-fw fa-cubes"></span>
+                <span>Miscellaneous</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="xs-miscellaneous-links"
+                >
+                    <li class="link">
+                      <a href="miscellaneous/enumerations.html" data-type="entity-link">Enums</a>
+                    </li>
+                    <li class="link">
+                      <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="coverage.html"><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
+        </li>
+
+        <li class="divider"></li>
+        <li class="copyright">
+                Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                            <img data-src="images/compodoc-vectorise.svg" class="img-responsive" data-type="compodoc-logo">
+                </a>
+        </li>
+
+    </ul>
+
+</nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+
+    <ul class="list">
+
+        <li class="title">
+            <a href="index.html" data-type="index-link">cline documentation</a>
+        </li>
+
+        <li class="divider"></li>
+
+            <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
+            <ul class="links">
+                    <li class="link">
+                        <a 
+                            
+                             href="overview.html" 
+                             href="overview.html" 
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-th"></span>Overview
+                        </a>
+                    </li>
+                    <li class="link">
+                      <a href="index.html" data-type="chapter-link"><span class="fa fa-file-text-o"></span>README</a>
+                    </li>
+                    <li class="link">
+                            <a href="license.html"
+                        data-type="chapter-link">
+                            <span class="fa fa-fw fa-file-text-o"></span>LICENSE
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="dependencies.html"
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-list"></span>Dependencies
+                        </a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter modules">
+            <a data-type="chapter-link" href="modules.html">
+                <div class="menu-toggler linked" data-toggle="collapse"
+                        data-target="#modules-links"
+                >
+                    <span class="fa fa-fw fa-archive"></span>
+                    <span class="link-name">Modules</span>
+                    <span class="fa fa-angle-down"></span>
+                </div>
+            </a>
+            <ul class="links collapse"
+                    id="modules-links"
+>
+                    <li class="link">
+                        <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+>
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+>
+                                        <li class="link">
+                                            <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/CanvasComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">CanvasComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/InterfaceComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">InterfaceComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+            </ul>
+        </li>
+
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#classes-links"
+>
+                <span class="fa fa-fw fa-file-code-o"></span>
+                <span>Classes</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="classes-links"
+>
+                    <li class="link">
+                        <a href="classes/ClusterMatch.html" data-type="entity-link">ClusterMatch</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Dendrogram.html" data-type="entity-link">Dendrogram</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Extras.html" data-type="entity-link">Extras</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Utils.html" data-type="entity-link">Utils</a>
+                    </li>
+            </ul>
+        </li>
+
+
+
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#miscellaneous-links"
+>
+                <span class="fa fa-fw fa-cubes"></span>
+                <span>Miscellaneous</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="miscellaneous-links"
+>
+                    <li class="link">
+                      <a href="miscellaneous/enumerations.html" data-type="entity-link">Enums</a>
+                    </li>
+                    <li class="link">
+                      <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="coverage.html"><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
+        </li>
+
+        <li class="divider"></li>
+        <li class="copyright">
+                Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                            <img data-src="images/compodoc-vectorise.svg" class="img-responsive" data-type="compodoc-logo">
+                </a>
+        </li>
+
+    </ul>
+
+</nav>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>InterfaceComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/interface/interface.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Component Description</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+                <code><a href="https://angular.io/api/core/AfterViewInit" target="_blank" >AfterViewInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-interface</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>interface.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./interface.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#dendrogramNames">dendrogramNames</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#displayMatches">displayMatches</a>
+                            </li>
+                            <li>
+                                <a href="#flipDendrogramSelect">flipDendrogramSelect</a>
+                            </li>
+                            <li>
+                                <a href="#highlightTypeSelect">highlightTypeSelect</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#matchKeys">matchKeys</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#matchLabels">matchLabels</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#matchType">matchType</a>
+                            </li>
+                            <li>
+                                <a href="#removeDendrogramSelect">removeDendrogramSelect</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#sampleSize">sampleSize</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#changeHighlightType">changeHighlightType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#changeMatchType">changeMatchType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#changeSampleSize">changeSampleSize</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#flipDendrogram">flipDendrogram</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getDendrogramsNames">getDendrogramsNames</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getDisplayMatches">getDisplayMatches</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getHighlightType">getHighlightType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getMatchType">getMatchType</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getSampleSize">getSampleSize</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#loadDendrogram">loadDendrogram</a>
+                            </li>
+                            <li>
+                                <a href="#ngAfterViewInit">ngAfterViewInit</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#removeDendrogram">removeDendrogram</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#savePDF">savePDF</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#savePNG">savePNG</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#saveSVG">saveSVG</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#sortDendrogram">sortDendrogram</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#toggleDisplayMatches">toggleDisplayMatches</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeHighlightTypeEmitter">changeHighlightTypeEmitter</a>
+                            </li>
+                            <li>
+                                <a href="#changeMatchTypeEmitter">changeMatchTypeEmitter</a>
+                            </li>
+                            <li>
+                                <a href="#changeSampleSizeEmitter">changeSampleSizeEmitter</a>
+                            </li>
+                            <li>
+                                <a href="#flipDendrogramEmitter">flipDendrogramEmitter</a>
+                            </li>
+                            <li>
+                                <a href="#loadDendrogramEmitter">loadDendrogramEmitter</a>
+                            </li>
+                            <li>
+                                <a href="#removeDendrogramEmitter">removeDendrogramEmitter</a>
+                            </li>
+                            <li>
+                                <a href="#savePDFEmitter">savePDFEmitter</a>
+                            </li>
+                            <li>
+                                <a href="#savePNGEmitter">savePNGEmitter</a>
+                            </li>
+                            <li>
+                                <a href="#saveSVGEmitter">saveSVGEmitter</a>
+                            </li>
+                            <li>
+                                <a href="#sortDendrogramEmitter">sortDendrogramEmitter</a>
+                            </li>
+                            <li>
+                                <a href="#toggleDisplayMatchesEmitter">toggleDisplayMatchesEmitter</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/app/interface/interface.component.ts:83</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Initialize all private variables</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="changeHighlightTypeEmitter"></a>
+                        <code>changeHighlightTypeEmitter</code>
+                    </td>
+                    <td class="col-md-10">
+                        <div><p>Event triggered when the user chooses to change the Highlighting of
+branches </p>
+</div>
+                        <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="24" class="link-to-prism">src/app/interface/interface.component.ts:24</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="changeMatchTypeEmitter"></a>
+                        <code>changeMatchTypeEmitter</code>
+                    </td>
+                    <td class="col-md-10">
+                        <div><p>Event triggered when the user chooses to change the matching algorithm for
+clusters </p>
+</div>
+                        <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="27" class="link-to-prism">src/app/interface/interface.component.ts:27</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="changeSampleSizeEmitter"></a>
+                        <code>changeSampleSizeEmitter</code>
+                    </td>
+                    <td class="col-md-10">
+                        <div><p>Event triggered when the user chooses a different sample size for its data </p>
+</div>
+                        <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/interface/interface.component.ts:29</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="flipDendrogramEmitter"></a>
+                        <code>flipDendrogramEmitter</code>
+                    </td>
+                    <td class="col-md-10">
+                        <div><p>Event triggered when the user chooses to horizontally flip a specific
+Dendrogram structure </p>
+</div>
+                        <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/interface/interface.component.ts:32</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="loadDendrogramEmitter"></a>
+                        <code>loadDendrogramEmitter</code>
+                    </td>
+                    <td class="col-md-10">
+                        <div><p>Event triggered when the user chooses to load a new Dendrogram structure </p>
+</div>
+                        <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="34" class="link-to-prism">src/app/interface/interface.component.ts:34</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="removeDendrogramEmitter"></a>
+                        <code>removeDendrogramEmitter</code>
+                    </td>
+                    <td class="col-md-10">
+                        <div><p>Event triggered when the user chooses to remove a Dendrogram from the visualization </p>
+</div>
+                        <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="36" class="link-to-prism">src/app/interface/interface.component.ts:36</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="savePDFEmitter"></a>
+                        <code>savePDFEmitter</code>
+                    </td>
+                    <td class="col-md-10">
+                        <div><p>Event triggered when the user chooses to save the current visualization to
+a PDF file </p>
+</div>
+                        <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="39" class="link-to-prism">src/app/interface/interface.component.ts:39</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="savePNGEmitter"></a>
+                        <code>savePNGEmitter</code>
+                    </td>
+                    <td class="col-md-10">
+                        <div><p>Event triggered when the user chooses to save the current visualization to
+a PNG file </p>
+</div>
+                        <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/interface/interface.component.ts:42</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="saveSVGEmitter"></a>
+                        <code>saveSVGEmitter</code>
+                    </td>
+                    <td class="col-md-10">
+                        <div><p>Event triggered when the user chooses to save the current visualization to
+an SVG file </p>
+</div>
+                        <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/interface/interface.component.ts:45</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="sortDendrogramEmitter"></a>
+                        <code>sortDendrogramEmitter</code>
+                    </td>
+                    <td class="col-md-10">
+                        <div><p>Event triggered when the user chooses to alphabetically sort the leaves of
+a particular Dendrogram structure </p>
+</div>
+                        <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="48" class="link-to-prism">src/app/interface/interface.component.ts:48</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="toggleDisplayMatchesEmitter"></a>
+                        <code>toggleDisplayMatchesEmitter</code>
+                    </td>
+                    <td class="col-md-10">
+                        <div><p>Event triggered when the user chooses to turn on or off the display of
+lines between matches across different Dendrogram structures </p>
+</div>
+                        <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="51" class="link-to-prism">src/app/interface/interface.component.ts:51</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="changeHighlightType"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            changeHighlightType
+                            </b>
+                            <a href="#changeHighlightType"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>changeHighlightType()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="123" class="link-to-prism">src/app/interface/interface.component.ts:123</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Request the main application to change the type of highlighting used on the
+branches of matching clusters.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="changeMatchType"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            changeMatchType
+                            </b>
+                            <a href="#changeMatchType"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>changeMatchType(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="133" class="link-to-prism">src/app/interface/interface.component.ts:133</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Request the main application to change the type of matching routine used
+for similar clusters across different Dendrogram structures.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>event</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The DOM event that triggered the call</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="changeSampleSize"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            changeSampleSize
+                            </b>
+                            <a href="#changeSampleSize"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>changeSampleSize(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="144" class="link-to-prism">src/app/interface/interface.component.ts:144</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Request the application to change the minumum number of leaves a
+sub-cluster needs to have in order to be considered for matching across
+Dendrogram structures.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>event</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The DOM event generated on user interaction</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="flipDendrogram"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            flipDendrogram
+                            </b>
+                            <a href="#flipDendrogram"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>flipDendrogram()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="152" class="link-to-prism">src/app/interface/interface.component.ts:152</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Request the application to horizontally flip the Dendrogram structure
+selected by the user.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getDendrogramsNames"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            getDendrogramsNames
+                            </b>
+                            <a href="#getDendrogramsNames"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>getDendrogramsNames()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="169" class="link-to-prism">src/app/interface/interface.component.ts:169</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Provide access to the component&#39;s list of Dendrogram names, from outside
+classes.</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>string[]</code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>The list of names currently used for each of the
+clusters in the visualization.</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getDisplayMatches"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            getDisplayMatches
+                            </b>
+                            <a href="#getDisplayMatches"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>getDisplayMatches()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="180" class="link-to-prism">src/app/interface/interface.component.ts:180</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Provide access to the flat that indicates whether cluster matches should be
+displayed by the application or not.</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>True if the matches are to be displayed by the
+application and false if not</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getHighlightType"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            getHighlightType
+                            </b>
+                            <a href="#getHighlightType"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>getHighlightType()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="195" class="link-to-prism">src/app/interface/interface.component.ts:195</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Provide access to the currently selected style of match highlighting, from
+three available options:
+None - Highlight is not applied
+Diff - Different branches of a cluster match are highlighted
+Simi - Equal branches of a cluster match are highlighted</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>A string representing the type of highlight that should
+be done for dendrogram branches that belong to a cluster match, or none in
+case no highlight has been selected</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getMatchType"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            getMatchType
+                            </b>
+                            <a href="#getMatchType"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>getMatchType()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="206" class="link-to-prism">src/app/interface/interface.component.ts:206</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Provide access to the selected matching routine to be used in the process
+of finding matching clusters across different Dendrogram structures.</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>An integer value that represents the type of matching
+strategy. The values returned are taken from the ClusterMatchEnum type.</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getSampleSize"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            getSampleSize
+                            </b>
+                            <a href="#getSampleSize"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>getSampleSize()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="217" class="link-to-prism">src/app/interface/interface.component.ts:217</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Provide access to the value of sample size.</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>The value currently selected as the mimimum number of
+leaves that a node needs to have in order to be considered non-trivial for
+the cluster matching routine</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="loadDendrogram"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            loadDendrogram
+                            </b>
+                            <a href="#loadDendrogram"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>loadDendrogram(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="229" class="link-to-prism">src/app/interface/interface.component.ts:229</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Request the main application to load a file containing a new Dendrogram
+structure for display. Additionally, it adds the name of the file as
+identifyer to the list of currently loaded structures.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>event</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The DOM component that triggered the call to the
+function</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngAfterViewInit"></a>
+                        <span class="name">
+                            <b>
+                            ngAfterViewInit
+                            </b>
+                            <a href="#ngAfterViewInit"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngAfterViewInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="114" class="link-to-prism">src/app/interface/interface.component.ts:114</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Initialization of views to Template elements</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="103" class="link-to-prism">src/app/interface/interface.component.ts:103</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Initialize the attributes of the Interface Component associated with the
+on screen display</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="removeDendrogram"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            removeDendrogram
+                            </b>
+                            <a href="#removeDendrogram"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>removeDendrogram()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="242" class="link-to-prism">src/app/interface/interface.component.ts:242</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Request the main Application the removal of the user selected Dendrogram
+structure. It also removes the name of such structure from the local list
+of loaded Dendrograms.</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="savePDF"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            savePDF
+                            </b>
+                            <a href="#savePDF"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>savePDF(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="256" class="link-to-prism">src/app/interface/interface.component.ts:256</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Request the application to save the current display as a PDF file.</p>
+<p>param {object} event The event generated by the user&#39;s interaction</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>event</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="savePNG"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            savePNG
+                            </b>
+                            <a href="#savePNG"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>savePNG(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="265" class="link-to-prism">src/app/interface/interface.component.ts:265</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Request the application to save the current display as a PNG file.</p>
+<p>param {object} event The event generated by the user&#39;s interaction</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>event</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="saveSVG"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            saveSVG
+                            </b>
+                            <a href="#saveSVG"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>saveSVG(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="274" class="link-to-prism">src/app/interface/interface.component.ts:274</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Request the application to save the current display as a PDF file.</p>
+<p>param {object} event The event generated by the user&#39;s interaction</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>event</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sortDendrogram"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            sortDendrogram
+                            </b>
+                            <a href="#sortDendrogram"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>sortDendrogram(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="284" class="link-to-prism">src/app/interface/interface.component.ts:284</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Request the application to apply an alphabetical sorting of the leaves to
+the user selected Dendrogram structure.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>event</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The event generated by the user&#39;s interaction</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="toggleDisplayMatches"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            toggleDisplayMatches
+                            </b>
+                            <a href="#toggleDisplayMatches"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>toggleDisplayMatches(event: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="300" class="link-to-prism">src/app/interface/interface.component.ts:300</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Request the application to turn on/off the display of lines representing
+the match of similar structures across diferent Dendrogram structures.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>event</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The event generated by the user&#39;s interaction</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="dendrogramNames"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            dendrogramNames
+                            </b>
+                            <a href="#dendrogramNames"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>dendrogramNames:     <code>string[]</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/app/interface/interface.component.ts:70</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>the names of the dendrogram structures currently on display </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="displayMatches"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            displayMatches
+                            </b>
+                            <a href="#displayMatches"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>displayMatches:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/app/interface/interface.component.ts:72</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>flag that indicates whether cluster matches should be displayed or not </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="flipDendrogramSelect"></a>
+                        <span class="name">
+                            <b>
+                            flipDendrogramSelect
+                            </b>
+                            <a href="#flipDendrogramSelect"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>flipDendrogramSelect:     <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Decorators : </i><code>ViewChild</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/interface/interface.component.ts:67</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Reference to the Select item in the Template, available for the user to
+horizontally flip a specific Dendrogram structure </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="highlightTypeSelect"></a>
+                        <span class="name">
+                            <b>
+                            highlightTypeSelect
+                            </b>
+                            <a href="#highlightTypeSelect"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>highlightTypeSelect:     <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Decorators : </i><code>ViewChild</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="63" class="link-to-prism">src/app/interface/interface.component.ts:63</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Reference to the Select item in the Template, available for the user to
+choose the type of highlighting to be used on matched Dendrogram clusters.
+Takes one of the following values:
+none - (no highlight),
+diff - (highlight the differences in the branches) or
+simi - (highlight the similarities in the branches) </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="matchKeys"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            matchKeys
+                            </b>
+                            <a href="#matchKeys"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>matchKeys:     <code>string[]</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>string[]</code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/interface/interface.component.ts:76</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Integer values used to key the different types of match between similar
+clusters </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="matchLabels"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            matchLabels
+                            </b>
+                            <a href="#matchLabels"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>matchLabels:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/app/interface/interface.component.ts:78</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Name used for each different type of match between similar clusters </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="matchType"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            matchType
+                            </b>
+                            <a href="#matchType"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>matchType:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="80" class="link-to-prism">src/app/interface/interface.component.ts:80</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Currently selected type of match strategy for similar clusters </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="removeDendrogramSelect"></a>
+                        <span class="name">
+                            <b>
+                            removeDendrogramSelect
+                            </b>
+                            <a href="#removeDendrogramSelect"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <code>removeDendrogramSelect:     <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://angular.io/api/core/ElementRef" target="_blank" >ElementRef</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Decorators : </i><code>ViewChild</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="55" class="link-to-prism">src/app/interface/interface.component.ts:55</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Reference to the Select item in the Template, available for the user to
+choose an element to remove from the visualization </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="sampleSize"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            sampleSize
+                            </b>
+                            <a href="#sampleSize"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>sampleSize:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="83" class="link-to-prism">src/app/interface/interface.component.ts:83</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The minimum number of leaves used by the cluster matching routine </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import { Component, EventEmitter, Output, OnInit, AfterViewInit, ElementRef, ViewChild } from &#x27;@angular/core&#x27;;
+import { ClusterMatchEnum } from &#x27;../clusterMatchType&#x27;;
+
+/**
+ * Component Description
+ */
+@Component({
+  selector: &#x27;app-interface&#x27;,
+  templateUrl: &#x27;./interface.component.html&#x27;,
+  styleUrls: [&#x27;./interface.component.css&#x27;],
+})
+
+/**
+ * Describe the functionality associated with the handling of the User Interface.
+ *
+ * In general, we will capture the events triggered by the user through the use
+ * of the available interface, and propagate these through to the appropriate
+ * handlers in the main application file.
+ */
+export class InterfaceComponent implements OnInit, AfterViewInit {
+
+  /** Event triggered when the user chooses to change the Highlighting of
+   *  branches */
+  @Output() changeHighlightTypeEmitter &#x3D; new EventEmitter&lt;string&gt;();
+  /** Event triggered when the user chooses to change the matching algorithm for
+   *  clusters */
+  @Output() changeMatchTypeEmitter &#x3D; new EventEmitter&lt;number&gt;();
+  /** Event triggered when the user chooses a different sample size for its data */
+  @Output() changeSampleSizeEmitter &#x3D; new EventEmitter&lt;number&gt;();
+  /** Event triggered when the user chooses to horizontally flip a specific
+   *  Dendrogram structure */
+  @Output() flipDendrogramEmitter &#x3D; new EventEmitter&lt;number&gt;();
+  /** Event triggered when the user chooses to load a new Dendrogram structure */
+  @Output() loadDendrogramEmitter &#x3D; new EventEmitter&lt;any&gt;();
+  /** Event triggered when the user chooses to remove a Dendrogram from the visualization */
+  @Output() removeDendrogramEmitter &#x3D; new EventEmitter&lt;number&gt;();
+  /** Event triggered when the user chooses to save the current visualization to
+   *  a PDF file */
+  @Output() savePDFEmitter &#x3D; new EventEmitter&lt;any&gt;();
+  /** Event triggered when the user chooses to save the current visualization to
+   *  a PNG file */
+  @Output() savePNGEmitter &#x3D; new EventEmitter&lt;any&gt;();
+  /** Event triggered when the user chooses to save the current visualization to
+   *  an SVG file */
+  @Output() saveSVGEmitter &#x3D; new EventEmitter&lt;any&gt;();
+  /** Event triggered when the user chooses to alphabetically sort the leaves of
+   *  a particular Dendrogram structure */
+  @Output() sortDendrogramEmitter &#x3D; new EventEmitter&lt;number&gt;();
+  /** Event triggered when the user chooses to turn on or off the display of
+   *  lines between matches across different Dendrogram structures */
+  @Output() toggleDisplayMatchesEmitter &#x3D; new EventEmitter&lt;boolean&gt;();
+
+  /** Reference to the Select item in the Template, available for the user to
+   *  choose an element to remove from the visualization */
+  @ViewChild(&#x27;removeDendrogramSelect&#x27;) removeDendrogramSelect: ElementRef;
+
+  /** Reference to the Select item in the Template, available for the user to
+   *  choose the type of highlighting to be used on matched Dendrogram clusters.
+   *  Takes one of the following values:
+   *  none - (no highlight),
+   *  diff - (highlight the differences in the branches) or
+   *  simi - (highlight the similarities in the branches) */
+  @ViewChild(&#x27;highlightTypeSelect&#x27;) highlightTypeSelect: ElementRef;
+
+  /** Reference to the Select item in the Template, available for the user to
+   *  horizontally flip a specific Dendrogram structure */
+  @ViewChild(&#x27;flipDendrogramSelect&#x27;) flipDendrogramSelect: ElementRef;
+
+  /** the names of the dendrogram structures currently on display */
+  private dendrogramNames: string[];
+  /** flag that indicates whether cluster matches should be displayed or not */
+  private displayMatches: boolean;
+
+  /** Integer values used to key the different types of match between similar
+   *  clusters */
+  private matchKeys: string[];
+  /** Name used for each different type of match between similar clusters */
+  private matchLabels: any;
+  /** Currently selected type of match strategy for similar clusters */
+  private matchType: number;
+
+  /** The minimum number of leaves used by the cluster matching routine */
+  private sampleSize: number;
+
+  /**
+   * Initialize all private variables
+   * @constructor
+   */
+  constructor() {
+    // there are no loaded dendrogram structures when the application starts
+    this.dendrogramNames &#x3D; [];
+    // cluster matches are shown by default
+    this.displayMatches &#x3D; true;
+    // Initially, to be considered non-trivial in terms of cluster matching, a
+    // node needs to have at least 3 leaves
+    this.sampleSize &#x3D; 3;
+  }
+
+  /**
+   * Initialize the attributes of the Interface Component associated with the
+   * on screen display
+   */
+  ngOnInit() {
+    // the types of matching that can be done between dendrograms is recovered
+    // from an enum type
+    this.matchLabels &#x3D; ClusterMatchEnum;
+    this.matchKeys &#x3D; Object.keys(ClusterMatchEnum).filter(Number);
+    this.matchType &#x3D; ClusterMatchEnum.BIOISOMORPHIC;
+  }
+
+  /**
+   * Initialization of views to Template elements
+   */
+  ngAfterViewInit(){
+    // by default, branches in matched clusters are not highlighted
+    this.highlightTypeSelect.nativeElement.selectedIndex &#x3D; 0;
+  }
+
+  /**
+   * Request the main application to change the type of highlighting used on the
+   * branches of matching clusters.
+   */
+  public changeHighlightType(): void{
+    this.changeHighlightTypeEmitter.emit(this.highlightTypeSelect.nativeElement.value);
+  }
+
+  /**
+   * Request the main application to change the type of matching routine used
+   * for similar clusters across different Dendrogram structures.
+   *
+   * @param {object} event The DOM event that triggered the call
+   */
+  public changeMatchType(event: any): void{
+    this.changeMatchTypeEmitter.emit(Number(event.target.value));
+  }
+
+  /**
+   * Request the application to change the minumum number of leaves a
+   * sub-cluster needs to have in order to be considered for matching across
+   * Dendrogram structures.
+   *
+   * @param {object} event The DOM event generated on user interaction
+   */
+  public changeSampleSize(event: any): void{
+    this.changeSampleSizeEmitter.emit(Number(event.target.value));
+  }
+
+  /**
+   * Request the application to horizontally flip the Dendrogram structure
+   * selected by the user.
+   */
+  public flipDendrogram(): void{
+    // capture the index of the option selected
+    var index: number &#x3D; this.flipDendrogramSelect.nativeElement.selectedIndex-1;
+    // trigger the flip of the corresponding element in the parent application
+    if( index&gt;&#x3D; 0 )
+      this.flipDendrogramEmitter.emit(index);
+    // reset the selection
+    this.flipDendrogramSelect.nativeElement.selectedIndex &#x3D; 0;
+  }
+
+  /**
+   * Provide access to the component&#x27;s list of Dendrogram names, from outside
+   * classes.
+   *
+   * @returns {string[]} The list of names currently used for each of the
+   * clusters in the visualization.
+   */
+  public getDendrogramsNames(): string[]{
+    return this.dendrogramNames;
+  }
+
+  /**
+   * Provide access to the flat that indicates whether cluster matches should be
+   * displayed by the application or not.
+   *
+   * @returns {boolean} True if the matches are to be displayed by the
+   * application and false if not
+   */
+  public getDisplayMatches(): boolean{
+    return this.displayMatches;
+  }
+
+  /**
+   * Provide access to the currently selected style of match highlighting, from
+   * three available options:
+   * None - Highlight is not applied
+   * Diff - Different branches of a cluster match are highlighted
+   * Simi - Equal branches of a cluster match are highlighted
+   *
+   * @returns {string} A string representing the type of highlight that should
+   * be done for dendrogram branches that belong to a cluster match, or none in
+   * case no highlight has been selected
+   */
+  public getHighlightType(): string{
+    return this.highlightTypeSelect.nativeElement.value;
+  }
+
+  /**
+   * Provide access to the selected matching routine to be used in the process
+   * of finding matching clusters across different Dendrogram structures.
+   *
+   * @returns {number} An integer value that represents the type of matching
+   * strategy. The values returned are taken from the ClusterMatchEnum type.
+   */
+  public getMatchType(): number{
+    return this.matchType;
+  }
+
+  /**
+   * Provide access to the value of sample size.
+   *
+   * @returns {number} The value currently selected as the mimimum number of
+   * leaves that a node needs to have in order to be considered non-trivial for
+   * the cluster matching routine
+   */
+  public getSampleSize(): number{
+    return this.sampleSize;
+  }
+
+  /**
+   * Request the main application to load a file containing a new Dendrogram
+   * structure for display. Additionally, it adds the name of the file as
+   * identifyer to the list of currently loaded structures.
+   *
+   * @param {object} event The DOM component that triggered the call to the
+   * function
+   */
+  public loadDendrogram(event: any): void{
+    var file: any &#x3D; event.target.files[0];
+    // trig an event in the main application to load the dendrogram
+    this.loadDendrogramEmitter.emit(file);
+    // add an option to Remove and Flip selection lists
+    this.dendrogramNames.push(file.name);
+  }
+
+  /**
+   * Request the main Application the removal of the user selected Dendrogram
+   * structure. It also removes the name of such structure from the local list
+   * of loaded Dendrograms.
+   */
+  public removeDendrogram(): void{
+    // capture the index of the option selected
+    var index: number &#x3D; this.removeDendrogramSelect.nativeElement.selectedIndex-1;
+    // trigger the removal of the element from the parent application
+    this.removeDendrogramEmitter.emit(index);
+    // remove the option from Remove and Flip select items
+    this.dendrogramNames.splice(index,1);
+  }
+
+  /**
+   * Request the application to save the current display as a PDF file.
+   *
+   * param {object} event The event generated by the user&#x27;s interaction
+   */
+  public savePDF(event: any): void{
+    this.savePDFEmitter.emit(event);
+  }
+
+  /**
+   * Request the application to save the current display as a PNG file.
+   *
+   * param {object} event The event generated by the user&#x27;s interaction
+   */
+  public savePNG(event: any): void{
+    this.savePNGEmitter.emit(event);
+  }
+
+  /**
+   * Request the application to save the current display as a PDF file.
+   *
+   * param {object} event The event generated by the user&#x27;s interaction
+   */
+  public saveSVG(event: any): void{
+    this.saveSVGEmitter.emit(event);
+  }
+
+  /**
+   * Request the application to apply an alphabetical sorting of the leaves to
+   * the user selected Dendrogram structure.
+   *
+   * @param {object} event The event generated by the user&#x27;s interaction
+   */
+  public sortDendrogram(event: any): void{
+    // capture the index of the option selected
+    var index: number &#x3D; event.target.selectedIndex-1;
+    // trigger the flip of the corresponding element in the parent application
+    this.sortDendrogramEmitter.emit(index);
+    // clear the option from the component and allow the user to select a
+    // different structure to sort
+    event.target.selectedIndex &#x3D; 0;
+  }
+
+  /**
+   * Request the application to turn on/off the display of lines representing
+   * the match of similar structures across diferent Dendrogram structures.
+   *
+   * @param {object} event The event generated by the user&#x27;s interaction
+   */
+  public toggleDisplayMatches(event: any): void{
+    this.toggleDisplayMatchesEmitter.emit(this.displayMatches);
+  }
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;!--
+  Options related to manipulating the list of dendrograms, or individual
+  structures
+--&gt;
+&lt;fieldset&gt;
+  &lt;legend&gt;Dendrogram Manipulation&lt;/legend&gt;
+
+  &lt;!-- Add a new dendrogram to the visualization --&gt;
+  &lt;label&gt;Load Dendrogram:&lt;/label&gt;
+  &lt;input
+    id&#x3D;&quot;loadDendrogramInput&quot;
+    type&#x3D;&quot;file&quot;
+    accept&#x3D;&quot;text/plain&quot;
+    (change)&#x3D;&quot;loadDendrogram($event)&quot;
+  /&gt;
+
+  &lt;!-- Remove a dendrogram from the visualization --&gt;
+  &lt;label&gt;Remove Dendrogram:&lt;/label&gt;
+  &lt;select #removeDendrogramSelect
+    id&#x3D;&quot;removeDendrogramSelect&quot;
+    (change)&#x3D;&quot;removeDendrogram()&quot;
+  &gt;
+    &lt;option&gt;Select...&lt;/option&gt;
+    &lt;option *ngFor&#x3D;&quot;let item of dendrogramNames&quot;
+      [value]&#x3D;&quot;item&quot;
+      [label]&#x3D;&quot;item&quot;
+    &gt;{{item}}
+    &lt;/option&gt;
+  &lt;/select&gt;
+
+  &lt;!-- Horizontally flip the selected dendrogram --&gt;
+  &lt;label&gt;Flip Dendrogram:&lt;/label&gt;
+  &lt;select #flipDendrogramSelect
+    id&#x3D;&quot;flipDendrogramSelect&quot;
+    (change)&#x3D;&quot;flipDendrogram()&quot;
+  &gt;
+    &lt;option&gt;Select...&lt;/option&gt;
+    &lt;option *ngFor&#x3D;&quot;let item of dendrogramNames&quot;
+      [value]&#x3D;&quot;item&quot;
+      [label]&#x3D;&quot;item&quot;
+    &gt;{{item}}
+    &lt;/option&gt;
+  &lt;/select&gt;
+
+  &lt;!-- Sort the branches of the selected dendrogram --&gt;
+  &lt;label&gt;Sort Dendrogram:&lt;/label&gt;
+  &lt;select
+    name&#x3D;&quot;sortDendro&quot;
+    (change)&#x3D;&quot;sortDendrogram($event)&quot;
+  &gt;
+    &lt;option&gt;Select...&lt;/option&gt;
+    &lt;option *ngFor&#x3D;&quot;let item of dendrogramNames&quot;
+      [value]&#x3D;&quot;item&quot;
+      [label]&#x3D;&quot;item&quot;
+    &gt;{{item}}
+    &lt;/option&gt;
+  &lt;/select&gt;
+&lt;/fieldset&gt;
+
+
+&lt;!--
+  Interaction related to the display and selection of cluster matching
+  algorithms
+--&gt;
+&lt;fieldset&gt;
+  &lt;!-- Toggle on/off the display of lines between matching clusters --&gt;
+  &lt;label&gt;Display Cluster Matches&lt;/label&gt;
+  &lt;input
+    id&#x3D;&quot;displayMatchesCheckbox&quot;
+    type&#x3D;&quot;checkbox&quot;
+    [(ngModel)]&#x3D;&quot;displayMatches&quot;
+    (change)&#x3D;&quot;toggleDisplayMatches($event)&quot;
+  /&gt;
+  &lt;br /&gt;
+
+  &lt;!-- Choose the type of cluster matching algorithm used by the application --&gt;
+  &lt;label&gt;Cluster Match:&lt;/label&gt;
+  &lt;select
+    id&#x3D;&quot;matchTypeSelect&quot;
+    [(ngModel)]&#x3D;&quot;matchType&quot;
+    (change)&#x3D;&quot;changeMatchType($event)&quot;
+  &gt;
+    &lt;option *ngFor&#x3D;&quot;let key of matchKeys&quot;
+      [value]&#x3D;&quot;key&quot;
+      [label]&#x3D;&quot;matchLabels[key]&quot;
+    &gt;{{matchLabels[key]}}
+    &lt;/option&gt;
+  &lt;/select&gt;
+
+  &lt;!--
+    Choose the minimum of children a node needs to have in order to be
+    considered for cluster matching
+  --&gt;
+  &lt;label&gt;Sample Size:&lt;/label&gt;
+  &lt;input
+    id&#x3D;&quot;sampleSizeInput&quot;
+    type&#x3D;&quot;number&quot;
+    ng-pattern&#x3D;&quot;/^[0-9]+$/&quot;
+    value&#x3D;{{sampleSize}}
+    [(ngModel)]&#x3D;&quot;sampleSize&quot;
+    step&#x3D;&quot;1&quot;
+    min&#x3D;&quot;2&quot;
+    (change)&#x3D;&quot;changeSampleSize($event)&quot;
+  /&gt;
+
+  &lt;br /&gt;
+
+  &lt;!-- Choose the type of highlighting that should be applied to matched
+  clusters --&gt;
+  &lt;label&gt;Highlight:&lt;/label&gt;
+    &lt;select #highlightTypeSelect
+      id&#x3D;&quot;highlightTypeSelect&quot;
+      (change)&#x3D;&quot;changeHighlightType()&quot;
+    &gt;
+    &lt;option value&#x3D;&quot;none&quot;&gt;None&lt;/option&gt;
+    &lt;option value&#x3D;&quot;simi&quot;&gt;Equal&lt;/option&gt;
+    &lt;option value&#x3D;&quot;diff&quot;&gt;Different&lt;/option&gt;
+  &lt;/select&gt;
+
+&lt;/fieldset&gt;
+
+&lt;div&gt;
+  &lt;button id&#x3D;&#x27;savePNG&#x27; (click)&#x3D;&quot;savePNG($event)&quot;&gt;Export PNG&lt;/button&gt;
+
+  &lt;button id&#x3D;&quot;saveSVG&quot; (click)&#x3D;&quot;saveSVG($event)&quot;&gt;Export SVG&lt;/button&gt;
+&lt;/div&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><!--  Options related to manipulating the list of dendrograms, or individual  structures--><fieldset>  <legend>Dendrogram Manipulation</legend>  <!-- Add a new dendrogram to the visualization -->  <label>Load Dendrogram:</label>  <input    id="loadDendrogramInput"    type="file"    accept="text/plain"    (change)="loadDendrogram($event)"  />  <!-- Remove a dendrogram from the visualization -->  <label>Remove Dendrogram:</label>  <select #removeDendrogramSelect    id="removeDendrogramSelect"    (change)="removeDendrogram()"  >    <option>Select...</option>    <option *ngFor="let item of dendrogramNames"      [value]="item"      [label]="item"    >{{item}}    </option>  </select>  <!-- Horizontally flip the selected dendrogram -->  <label>Flip Dendrogram:</label>  <select #flipDendrogramSelect    id="flipDendrogramSelect"    (change)="flipDendrogram()"  >    <option>Select...</option>    <option *ngFor="let item of dendrogramNames"      [value]="item"      [label]="item"    >{{item}}    </option>  </select>  <!-- Sort the branches of the selected dendrogram -->  <label>Sort Dendrogram:</label>  <select    name="sortDendro"    (change)="sortDendrogram($event)"  >    <option>Select...</option>    <option *ngFor="let item of dendrogramNames"      [value]="item"      [label]="item"    >{{item}}    </option>  </select></fieldset><!--  Interaction related to the display and selection of cluster matching  algorithms--><fieldset>  <!-- Toggle on/off the display of lines between matching clusters -->  <label>Display Cluster Matches</label>  <input    id="displayMatchesCheckbox"    type="checkbox"    [(ngModel)]="displayMatches"    (change)="toggleDisplayMatches($event)"  />  <br />  <!-- Choose the type of cluster matching algorithm used by the application -->  <label>Cluster Match:</label>  <select    id="matchTypeSelect"    [(ngModel)]="matchType"    (change)="changeMatchType($event)"  >    <option *ngFor="let key of matchKeys"      [value]="key"      [label]="matchLabels[key]"    >{{matchLabels[key]}}    </option>  </select>  <!--    Choose the minimum of children a node needs to have in order to be    considered for cluster matching  -->  <label>Sample Size:</label>  <input    id="sampleSizeInput"    type="number"    ng-pattern="/^[0-9]+$/"    value={{sampleSize}}    [(ngModel)]="sampleSize"    step="1"    min="2"    (change)="changeSampleSize($event)"  />  <br />  <!-- Choose the type of highlighting that should be applied to matched  clusters -->  <label>Highlight:</label>    <select #highlightTypeSelect      id="highlightTypeSelect"      (change)="changeHighlightType()"    >    <option value="none">None</option>    <option value="simi">Equal</option>    <option value="diff">Different</option>  </select></fieldset><div>  <button id=\'savePNG\' (click)="savePNG($event)">Export PNG</button>  <button id="saveSVG" (click)="saveSVG($event)">Export SVG</button></div></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CanvasComponent', 'selector': 'app-canvas'},{'name': 'InterfaceComponent', 'selector': 'app-interface'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'InterfaceComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+        <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'InterfaceComponent.html';
+        </script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+
+    </body>
+</html>

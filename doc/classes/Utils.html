@@ -1,0 +1,1774 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>cline documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">cline documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <nav>
+
+    <ul class="list">
+
+        <li class="title">
+            <a href="index.html" data-type="index-link">cline documentation</a>
+        </li>
+
+        <li class="divider"></li>
+
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
+            <ul class="links">
+                    <li class="link">
+                        <a 
+                            
+                             href="overview.html" 
+                             href="overview.html" 
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-th"></span>Overview
+                        </a>
+                    </li>
+                    <li class="link">
+                      <a href="index.html" data-type="chapter-link"><span class="fa fa-file-text-o"></span>README</a>
+                    </li>
+                    <li class="link">
+                            <a href="license.html"
+                        data-type="chapter-link">
+                            <span class="fa fa-fw fa-file-text-o"></span>LICENSE
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="dependencies.html"
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-list"></span>Dependencies
+                        </a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter modules">
+            <a data-type="chapter-link" href="modules.html">
+                <div class="menu-toggler linked" data-toggle="collapse"
+                        data-target="#xs-modules-links"
+                >
+                    <span class="fa fa-fw fa-archive"></span>
+                    <span class="link-name">Modules</span>
+                    <span class="fa fa-angle-down"></span>
+                </div>
+            </a>
+            <ul class="links collapse"
+                    id="xs-modules-links"
+                >
+                    <li class="link">
+                        <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#xs-components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+                                    >
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="xs-components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+                                    >
+                                        <li class="link">
+                                            <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/CanvasComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">CanvasComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/InterfaceComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">InterfaceComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+            </ul>
+        </li>
+
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#xs-classes-links"
+                >
+                <span class="fa fa-fw fa-file-code-o"></span>
+                <span>Classes</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="xs-classes-links"
+                >
+                    <li class="link">
+                        <a href="classes/ClusterMatch.html" data-type="entity-link">ClusterMatch</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Dendrogram.html" data-type="entity-link">Dendrogram</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Extras.html" data-type="entity-link">Extras</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Utils.html" data-type="entity-link">Utils</a>
+                    </li>
+            </ul>
+        </li>
+
+
+
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#xs-miscellaneous-links"
+                >
+                <span class="fa fa-fw fa-cubes"></span>
+                <span>Miscellaneous</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="xs-miscellaneous-links"
+                >
+                    <li class="link">
+                      <a href="miscellaneous/enumerations.html" data-type="entity-link">Enums</a>
+                    </li>
+                    <li class="link">
+                      <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="coverage.html"><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
+        </li>
+
+        <li class="divider"></li>
+        <li class="copyright">
+                Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                            <img data-src="images/compodoc-vectorise.svg" class="img-responsive" data-type="compodoc-logo">
+                </a>
+        </li>
+
+    </ul>
+
+</nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+
+    <ul class="list">
+
+        <li class="title">
+            <a href="index.html" data-type="index-link">cline documentation</a>
+        </li>
+
+        <li class="divider"></li>
+
+            <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
+            <ul class="links">
+                    <li class="link">
+                        <a 
+                            
+                             href="overview.html" 
+                             href="overview.html" 
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-th"></span>Overview
+                        </a>
+                    </li>
+                    <li class="link">
+                      <a href="index.html" data-type="chapter-link"><span class="fa fa-file-text-o"></span>README</a>
+                    </li>
+                    <li class="link">
+                            <a href="license.html"
+                        data-type="chapter-link">
+                            <span class="fa fa-fw fa-file-text-o"></span>LICENSE
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="dependencies.html"
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-list"></span>Dependencies
+                        </a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter modules">
+            <a data-type="chapter-link" href="modules.html">
+                <div class="menu-toggler linked" data-toggle="collapse"
+                        data-target="#modules-links"
+                >
+                    <span class="fa fa-fw fa-archive"></span>
+                    <span class="link-name">Modules</span>
+                    <span class="fa fa-angle-down"></span>
+                </div>
+            </a>
+            <ul class="links collapse"
+                    id="modules-links"
+>
+                    <li class="link">
+                        <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+>
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+>
+                                        <li class="link">
+                                            <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/CanvasComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">CanvasComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/InterfaceComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">InterfaceComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+            </ul>
+        </li>
+
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#classes-links"
+>
+                <span class="fa fa-fw fa-file-code-o"></span>
+                <span>Classes</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="classes-links"
+>
+                    <li class="link">
+                        <a href="classes/ClusterMatch.html" data-type="entity-link">ClusterMatch</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Dendrogram.html" data-type="entity-link">Dendrogram</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Extras.html" data-type="entity-link">Extras</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Utils.html" data-type="entity-link">Utils</a>
+                    </li>
+            </ul>
+        </li>
+
+
+
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#miscellaneous-links"
+>
+                <span class="fa fa-fw fa-cubes"></span>
+                <span>Miscellaneous</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="miscellaneous-links"
+>
+                    <li class="link">
+                      <a href="miscellaneous/enumerations.html" data-type="entity-link">Enums</a>
+                    </li>
+                    <li class="link">
+                      <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="coverage.html"><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
+        </li>
+
+        <li class="divider"></li>
+        <li class="copyright">
+                Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                            <img data-src="images/compodoc-vectorise.svg" class="img-responsive" data-type="compodoc-logo">
+                </a>
+        </li>
+
+    </ul>
+
+</nav>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content class">
+                   <div class="content-data">
+
+
+
+
+
+
+
+
+
+<ol class="breadcrumb">
+  <li>Classes</li>
+  <li>Utils</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info">
+        <p class="comment">
+            <h3>File</h3>
+        </p>
+        <p class="comment">
+            <code>src/app/utils.ts</code>
+        </p>
+
+            <p class="comment">
+                <h3>Description</h3>
+            </p>
+            <p class="comment">
+                <p>Class that provides several utility functions to the application.</p>
+
+            </p>
+
+
+
+
+            <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#compareNodes">compareNodes</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#count">count</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#hsv2rgb">hsv2rgb</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#parsePhylogramTree">parsePhylogramTree</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#rotate">rotate</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#rsplit">rsplit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#scale">scale</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#splitIntoChildren">splitIntoChildren</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Static</span>
+                                <a href="#translate">translate</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+
+
+        </tbody>
+    </table>
+</section>
+
+
+
+            <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="compareNodes"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Static</span>
+                            compareNodes
+                            </b>
+                            <a href="#compareNodes"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>compareNodes(a: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, b: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>, property: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="23" class="link-to-prism">src/app/utils.ts:23</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Compare two nodes, based on the given property, and indicates whether the
+first is lesser, greater or equal to the second one.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>a</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The first node in the comparison</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>b</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The second node in the comparison</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>property</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The particular data field that will be used to
+compare the first and second node</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>A number that indicates if the first node is lesser that
+the second: -1; greater: 1; or equal: 0.</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="count"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Static</span>
+                            count
+                            </b>
+                            <a href="#count"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>count(st: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, char: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, start: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="42" class="link-to-prism">src/app/utils.ts:42</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Count the number of times a particular character appears in a given string.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Default value</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>st</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+
+                                                        <td>
+                                                                <code><p>The string where we will look for the character</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>char</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+                                                        <td>
+                                                        </td>
+
+                                                        <td>
+                                                                <code><p>The character we are searching for</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>start</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code>0</code>
+                                                        </td>
+
+                                                        <td>
+                                                                <code><p>The position in the string st from where we should
+start counting. By default, we start from the beginning of the string</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>A value that indicates the number of times char appears
+in st, starting from position start</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="hsv2rgb"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Static</span>
+                            hsv2rgb
+                            </b>
+                            <a href="#hsv2rgb"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>hsv2rgb(h: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, s: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, v: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/utils.ts:61</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Given a color, expressed as an HSV tuple, return the same color expressed
+as an HTML RGB color.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>h</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The hue of the color</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>s</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The saturation of the color, in the range [0,1]</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>v</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The value of the color, in the range [0,1]</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>An html rgb representation of the input color, i.e. a
+string that follows the convention #RRGGBB</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="parsePhylogramTree"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Static</span>
+                            parsePhylogramTree
+                            </b>
+                            <a href="#parsePhylogramTree"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>parsePhylogramTree(dendrogram: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="135" class="link-to-prism">src/app/utils.ts:135</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>In order to use the application, the user needs to load Dendrogram
+structures from text files written in the Newick (or New Hampshire) format,
+such as the ones provided by the phylogram package in R. However, in order
+to use d3&#39;s hierarchical properties, we need to parse this text into an
+object with a JSON-like structure.</p>
+<p>We define an &quot;empty&quot; root node for the Dendrogram, and then recursively
+traverse the text file, searching for children and adding them to the
+structure.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>dendrogram</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The contents of the text file used as input for
+the loadDendrogram routine</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>id</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>A string that represents the position of the current
+node within the overall dendrogram structure</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>A reference to the root of the loaded Dendrogram</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rotate"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Static</span>
+                            rotate
+                            </b>
+                            <a href="#rotate"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>rotate(p: number[], rad: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="182" class="link-to-prism">src/app/utils.ts:182</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Rotate a two-dimensional point, expressed as an  X,Y coordinate pair,
+around Z-axis</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>p</td>
+                                                        <td>
+                                                                    <code>number[]</code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The point, in two-dimensinoal space, to be rotated</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>rad</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The rotation angle, expressed in radians</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>number[]</code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>The rotated point, as a two coordinate array</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="rsplit"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Static</span>
+                            rsplit
+                            </b>
+                            <a href="#rsplit"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>rsplit(st: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, sep: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>, maxsplit: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="198" class="link-to-prism">src/app/utils.ts:198</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Split an input string into components, starting from the right-most
+appearance of the separator</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>st</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The input string</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>sep</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The string used as separator</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>maxsplit</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The maximum number of components into which the
+input string is to be splitted</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>string[]</code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>An array containing the splitted parts</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="scale"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Static</span>
+                            scale
+                            </b>
+                            <a href="#scale"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>scale(p: number[], s: number[])</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="213" class="link-to-prism">src/app/utils.ts:213</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Scale a two-dimensional point, expressed as an X, Y coordinate pair.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>p</td>
+                                                        <td>
+                                                                    <code>number[]</code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The point, in two-dimensional space, to be scaled</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>s</td>
+                                                        <td>
+                                                                    <code>number[]</code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>A two-dimensional vector with the scale factors for X
+and Y</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>number[]</code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>The scaled point, as a two coordinate array</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="splitIntoChildren"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Static</span>
+                            splitIntoChildren
+                            </b>
+                            <a href="#splitIntoChildren"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>splitIntoChildren(rawTex: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="258" class="link-to-prism">src/app/utils.ts:258</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>The Newick encodes each node whithin the hierarchy as a comma separated,
+key-value array with the following structure:</p>
+<p>[ &lt;node&#39;s name&gt; or &lt;list of node&#39;s children&gt; : <distance-to-parent> , ...]</p>
+<p>If the key is a name, then the current node is a leaf, otherwise, the key
+represent a list of children for the current node.</p>
+<p>The value component represents the distance measured from the current node
+to its parent node.</p>
+<p>A sample string representing a dendrogram is as follows:</p>
+<p>&#39;ADX.x2&#39;:0.52,(&#39;ADX.x1&#39;:0.36,&#39;ADX.x3&#39;:0.36):0.16</p>
+<p>Which graphically, we could interpret as:</p>
+<div><pre class="line-numbers"><code class="language-none">       0.52
+  |--------------- leaf ADX.x2
+  |         0.36
+root      |------- leaf ADX.x1
+  | 0.16  |
+  |------node
+          |  0.36
+          |------- leaf ADX.x3</code></pre></div><p>Clearly from the example, only leaf nodes have a name.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>rawTex</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>string[]</code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>An array of strings, where each item represents a child
+of the current node. In our example, the return list will have two items:
+&#39;ADX.x2&#39;:0.5301862
+(&#39;ADX.x1&#39;:0.3647867,&#39;ADX.x3&#39;:0.3647867):0.165399</p>
+<p>Notice that the second child is an internal node of the overall dendrogram
+structure.</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="translate"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Static</span>
+                            translate
+                            </b>
+                            <a href="#translate"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>translate(p: number[], t: number[])</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="315" class="link-to-prism">src/app/utils.ts:315</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Translate a two-dimensional point, expressed as an X, Y coordinate pair.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>p</td>
+                                                        <td>
+                                                                    <code>number[]</code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The point, in two-dimensinoal space, to be translated</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>t</td>
+                                                        <td>
+                                                                    <code>number[]</code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The translation vector</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>number[]</code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>The translated point, as a two coordinate array</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+
+
+
+
+
+    </div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import * as jsPDF from &#x27;jspdf&#x27;;
+import * as d3 from &#x27;d3&#x27;;
+
+import { saveAs } from &#x27;file-saver&#x27;;
+
+/**
+ * Class that provides several utility functions to the application.
+ */
+export class Utils{
+
+  /**
+   * Compare two nodes, based on the given property, and indicates whether the
+   * first is lesser, greater or equal to the second one.
+   *
+   * @param {node} a The first node in the comparison
+   * @param {node} b The second node in the comparison
+   * @param {string} property The particular data field that will be used to
+   * compare the first and second node
+   *
+   * @returns {number} A number that indicates if the first node is lesser that
+   * the second: -1; greater: 1; or equal: 0.
+   */
+  public static compareNodes(a: any, b: any, property: string): number{
+    if( a.data[property] &lt; b.data[property] )
+      return -1;
+    if( a.data[property] &gt; b.data[property] )
+      return 1;
+    return 0;
+  }
+
+  /**
+   * Count the number of times a particular character appears in a given string.
+   *
+   * @param {string} st The string where we will look for the character
+   * @param {string} char The character we are searching for
+   * @param {number} start The position in the string st from where we should
+   * start counting. By default, we start from the beginning of the string
+
+   * @returns {number} A value that indicates the number of times char appears
+   * in st, starting from position start
+   */
+  public static count(st: string, char:string, start: number &#x3D;0): number{
+    var c:number &#x3D; 0;
+    for(var i:number &#x3D;start; i&lt;st.length; ++i)
+      if( st.charAt(i) &#x3D;&#x3D;&#x3D; char.charAt(0) )
+        c +&#x3D; 1;
+    return c;
+  }
+
+  /**
+   * Given a color, expressed as an HSV tuple, return the same color expressed
+   * as an HTML RGB color.
+   *
+   * @param {number} h The hue of the color
+   * @param {number} s The saturation of the color, in the range [0,1]
+   * @param {number} v The value of the color, in the range [0,1]
+   *
+   * @returns {string} An html rgb representation of the input color, i.e. a
+   * string that follows the convention #RRGGBB
+   */
+  public static hsv2rgb(h: number, s: number, v: number): string{
+    /* clamp saturation and value to 1 */
+    if( s &gt; 1 ) s &#x3D; 1;
+    if( v &gt; 1 ) v &#x3D; 1;
+    /* storage for the color representation in RGB color space */
+    var r: number &#x3D; 0.0;
+    var g: number &#x3D; 0.0;
+    var b: number &#x3D; 0.0;
+
+    var f, p, q, t;
+    var k;
+    if (s &#x3D;&#x3D;&#x3D; 0.0) {    // achromatic case
+      r &#x3D; g &#x3D; b &#x3D; v;
+    }
+    else {    // chromatic case
+      if (h &#x3D;&#x3D;&#x3D; 360.0) h&#x3D;0.0;
+      h &#x3D; h/60.0;
+      k &#x3D; Math.round(h);
+      f &#x3D; h - (k*1.0);
+
+      p &#x3D; v * (1.0 - s);
+      q &#x3D; v * (1.0 - (f*s));
+      t &#x3D; v * (1.0 - ((1.0 - f)*s));
+
+      switch (k) {
+        case 0:
+          r &#x3D; v;  g &#x3D; t;  b &#x3D; p;
+          break;
+        case 1:
+          r &#x3D; q;  g &#x3D; v;  b &#x3D;  p;
+          break;
+        case 2:
+          r &#x3D; p;  g &#x3D; v;  b &#x3D;  t;
+          break;
+        case 3:
+          r &#x3D; p;  g &#x3D; q;  b &#x3D;  v;
+          break;
+        case 4:
+          r &#x3D; t;  g &#x3D; p;  b &#x3D;  v;
+          break;
+        case 5:
+          r &#x3D; v;  g &#x3D; p;  b &#x3D;  q;
+          break;
+      }
+    }
+
+    r &#x3D; Math.trunc(r*255);
+    var rr: string &#x3D; (&quot;00&quot; + r.toString(16)).slice(-2);
+    g &#x3D; Math.trunc(g*255);
+    var gg: string &#x3D; (&quot;00&quot; + g.toString(16)).slice(-2);
+    b &#x3D; Math.trunc(b*255);
+    var bb: string &#x3D; (&quot;00&quot; + b.toString(16)).slice(-2);
+    return &quot;#&quot;+rr+gg+bb;
+  }
+
+
+  /**
+   * In order to use the application, the user needs to load Dendrogram
+   * structures from text files written in the Newick (or New Hampshire) format,
+   * such as the ones provided by the phylogram package in R. However, in order
+   * to use d3&#x27;s hierarchical properties, we need to parse this text into an
+   * object with a JSON-like structure.
+   *
+   * We define an &quot;empty&quot; root node for the Dendrogram, and then recursively
+   * traverse the text file, searching for children and adding them to the
+   * structure.
+   *
+   * @param {string} dendrogram The contents of the text file used as input for
+   * the loadDendrogram routine
+   * @param {string} id A string that represents the position of the current
+   * node within the overall dendrogram structure
+   *
+   * @returns {object} A reference to the root of the loaded Dendrogram
+   */
+  public static parsePhylogramTree(dendrogram: string, id: string): any{
+    // the current node is always an empty object (there is no data associated
+    // to it) with an empty list of children
+    var root: any &#x3D; {};
+    root[&quot;children&quot;] &#x3D; [];
+
+    // given a text representing a dendrogram structure, we identify the nodes
+    // that represent a child of the current node in the structure
+    var children: string[] &#x3D; Utils.splitIntoChildren(dendrogram);
+
+    // and we add them to the current structure
+    for (var i: number&#x3D;0; i&lt;children.length; ++i ){
+      // we split the text that represent the child into its key-value parts
+      var txt: string[] &#x3D; Utils.rsplit(children[i],&#x27;:&#x27;,1);
+      var c: number &#x3D; Utils.count(txt[0],&#x27;:&#x27;,1);
+      // if no extra separators are found within the key section, then the node
+      // is a leaf, and we can simple add it to the structure
+      if( c &#x3D;&#x3D;&#x3D; 0 ){
+        root[&quot;children&quot;].push({
+          // remove single quote mark from name
+          &quot;name&quot;: txt[0].substring(1,txt[0].length-1),
+          &quot;id&quot;: id+&quot;&quot;+i,
+          &quot;distToParent&quot;: txt[1]
+        });
+      }
+      // recursively parse the node&#x27;s children, removing the first and last
+      // characters, that should always be &#x27;(&#x27; and &#x27;)&#x27; respectively
+      else{
+        var child: string &#x3D; txt[0].substring(1,txt[0].length-1);
+        var o: any &#x3D; Utils.parsePhylogramTree(child, id+&quot;&quot;+i);
+        o[&quot;distToParent&quot;] &#x3D; txt[1];
+        o[&quot;id&quot;] &#x3D; id+&quot;&quot;+i;
+        root[&quot;children&quot;].push(o);
+      }
+    }
+    return root;
+  }
+
+  /**
+   * Rotate a two-dimensional point, expressed as an  X,Y coordinate pair,
+   * around Z-axis
+   *
+   * @param {number[]} p The point, in two-dimensinoal space, to be rotated
+   * @param {number} rad The rotation angle, expressed in radians
+   *
+   * @returns {number[]} The rotated point, as a two coordinate array
+   */
+  public static rotate(p: number[], rad: number): number[]{
+    return [ p[0]*Math.cos(rad)-p[1]*Math.sin(rad),
+      p[0]*Math.sin(rad)-p[1]*Math.cos(rad) ];
+  }
+
+  /**
+  * Split an input string into components, starting from the right-most
+  * appearance of the separator
+  *
+  * @param {string} st The input string
+  * @param {string} sep The string used as separator
+  * @param {number} maxsplit The maximum number of components into which the
+  * input string is to be splitted
+  *
+  * @returns {string[]} An array containing the splitted parts
+  */
+  public static rsplit(st: string, sep: string, maxsplit: number): string[]{
+    var parts: string[];
+    parts &#x3D; st.split(sep);
+    return maxsplit ? [ parts.slice(0, -maxsplit).join(sep) ].concat(parts.slice(-maxsplit)) : parts;
+  }
+
+  /**
+   * Scale a two-dimensional point, expressed as an X, Y coordinate pair.
+   *
+   * @param {number[]} p The point, in two-dimensional space, to be scaled
+   * @param {number[]} s A two-dimensional vector with the scale factors for X
+   * and Y
+   *
+   * @returns {number[]} The scaled point, as a two coordinate array
+   */
+  public static scale(p: number[], s: number[]): number[]{
+    return [ p[0]*s[0], p[1]*s[1] ];
+  }
+
+  /**
+   * The Newick encodes each node whithin the hierarchy as a comma separated,
+   * key-value array with the following structure:
+   *
+   * [ &lt;node&#x27;s name&gt; or &lt;list of node&#x27;s children&gt; : &lt;distance-to-parent&gt; , ...]
+   *
+   *If the key is a name, then the current node is a leaf, otherwise, the key
+   * represent a list of children for the current node.
+   *
+   * The value component represents the distance measured from the current node
+   * to its parent node.
+   *
+   * A sample string representing a dendrogram is as follows:
+   *
+   * &#x27;ADX.x2&#x27;:0.52,(&#x27;ADX.x1&#x27;:0.36,&#x27;ADX.x3&#x27;:0.36):0.16
+   *
+   * Which graphically, we could interpret as:
+   &#x60;&#x60;&#x60;
+           0.52
+      |--------------- leaf ADX.x2
+      |         0.36
+     root      |------- leaf ADX.x1
+      | 0.16  |
+      |------node
+              |  0.36
+              |------- leaf ADX.x3
+   &#x60;&#x60;&#x60;
+   *
+   * Clearly from the example, only leaf nodes have a name.
+   *
+   * @param {string} rawText The text that represents the dendrogram rooted at
+   * the current node.
+   *
+   * @returns {string[]} An array of strings, where each item represents a child
+   * of the current node. In our example, the return list will have two items:
+   * &#x27;ADX.x2&#x27;:0.5301862
+   * (&#x27;ADX.x1&#x27;:0.3647867,&#x27;ADX.x3&#x27;:0.3647867):0.165399
+   *
+   * Notice that the second child is an internal node of the overall dendrogram
+   * structure.
+   */
+  public static splitIntoChildren(rawTex: string): string[]{
+    // initially, the list of nodes to return is empty
+    var components: string[] &#x3D; [];
+    // the list of the current node&#x27;s children is a comma separated string, thus
+    // counting them gives an upper bound for the number of children the current
+    // node potentially has
+    var commas:number &#x3D; Utils.count(rawTex, &quot;,&quot;);
+    // we will traverse the word, thus we need to keep track of the index within
+    // the rawTex where we currently stand
+    var previousIndex:number &#x3D; 0;
+
+    // for each comma in the rawText, we need to decide if its being used to
+    // separate childrens of the current node, or other descendats further down
+    // the hierarchy
+    while( commas &gt; 0 ){
+      // the index within the rawText of the next comma to inspect, if none is
+      // found, then simply the end of the string
+      var currentIndex:number &#x3D; rawTex.indexOf(&#x27;,&#x27;, previousIndex+1);
+      if( currentIndex &#x3D;&#x3D;&#x3D; -1 ){
+        currentIndex &#x3D; rawTex.length;
+      }
+      previousIndex &#x3D; currentIndex;
+
+      // between comma characters, the text will represent a child for the
+      // current node only if there is an equal number of open and close
+      // brackets (an uneven number means we are standing in a comma within a
+      // lower level of the structure). We use this number to identify all
+      // children
+      var leftBrack: number &#x3D; Utils.count(rawTex.substring(0,currentIndex),&#x27;(&#x27;);
+      var rightBrack:number &#x3D; Utils.count(rawTex.substring(0,currentIndex),&#x27;)&#x27;);
+      // if we identify a child (for leaf nodes, left and right brackets are 0)
+      if( leftBrack &#x3D;&#x3D;&#x3D; rightBrack ){
+        // we add the corresponding text to the list of children
+        components.push(rawTex.substring(0, currentIndex));
+        // we remove the partial string from the remainder of the dendrogram
+        rawTex &#x3D; rawTex.substring(currentIndex+1);
+        // we initialize the index to search for the next comma character
+        previousIndex &#x3D; 0;
+      }
+      // we have one less comma character to process
+      commas -&#x3D; 1;
+    }
+    // if there is any text left, we add it as a child
+    if( rawTex !&#x3D;&#x3D; &quot;&quot; )
+      components.push(rawTex);
+
+    return components;
+  }
+
+  /**
+   * Translate a two-dimensional point, expressed as an X, Y coordinate pair.
+   *
+   * @param {number[]} p The point, in two-dimensinoal space, to be translated
+   * @param {number[]} t The translation vector
+   *
+   * @returns {number[]} The translated point, as a two coordinate array
+   */
+  static translate(p:number[], t: number[]): number[]{
+    return [ p[0]+t[0], p[1]+t[1] ];
+  }
+}
+</code></pre>
+    </div>
+</div>
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+        <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'class';
+            var COMPODOC_CURRENT_PAGE_URL = 'Utils.html';
+        </script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+
+    </body>
+</html>

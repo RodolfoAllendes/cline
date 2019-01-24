@@ -1,0 +1,3417 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title>cline documentation</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="icon" type="image/x-icon" href="../images/favicon.ico">
+	      <link rel="stylesheet" href="../styles/style.css">
+    </head>
+    <body>
+
+        <div class="navbar navbar-default navbar-fixed-top visible-xs">
+            <a href="../" class="navbar-brand">cline documentation</a>
+            <button type="button" class="btn btn-default btn-menu fa fa-bars" id="btn-menu"></button>
+        </div>
+
+        <div class="xs-menu menu" id="mobile-menu">
+            <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+            <nav>
+
+    <ul class="list">
+
+        <li class="title">
+            <a href="index.html" data-type="index-link">cline documentation</a>
+        </li>
+
+        <li class="divider"></li>
+
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
+            <ul class="links">
+                    <li class="link">
+                        <a 
+                            
+                             href="overview.html" 
+                             href="overview.html" 
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-th"></span>Overview
+                        </a>
+                    </li>
+                    <li class="link">
+                      <a href="index.html" data-type="chapter-link"><span class="fa fa-file-text-o"></span>README</a>
+                    </li>
+                    <li class="link">
+                            <a href="license.html"
+                        data-type="chapter-link">
+                            <span class="fa fa-fw fa-file-text-o"></span>LICENSE
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="dependencies.html"
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-list"></span>Dependencies
+                        </a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter modules">
+            <a data-type="chapter-link" href="modules.html">
+                <div class="menu-toggler linked" data-toggle="collapse"
+                        data-target="#xs-modules-links"
+                >
+                    <span class="fa fa-fw fa-archive"></span>
+                    <span class="link-name">Modules</span>
+                    <span class="fa fa-angle-down"></span>
+                </div>
+            </a>
+            <ul class="links collapse"
+                    id="xs-modules-links"
+                >
+                    <li class="link">
+                        <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#xs-components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+                                    >
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="xs-components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+                                    >
+                                        <li class="link">
+                                            <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/CanvasComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">CanvasComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/InterfaceComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">InterfaceComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+            </ul>
+        </li>
+
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#xs-classes-links"
+                >
+                <span class="fa fa-fw fa-file-code-o"></span>
+                <span>Classes</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="xs-classes-links"
+                >
+                    <li class="link">
+                        <a href="classes/ClusterMatch.html" data-type="entity-link">ClusterMatch</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Dendrogram.html" data-type="entity-link">Dendrogram</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Extras.html" data-type="entity-link">Extras</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Utils.html" data-type="entity-link">Utils</a>
+                    </li>
+            </ul>
+        </li>
+
+
+
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#xs-miscellaneous-links"
+                >
+                <span class="fa fa-fw fa-cubes"></span>
+                <span>Miscellaneous</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="xs-miscellaneous-links"
+                >
+                    <li class="link">
+                      <a href="miscellaneous/enumerations.html" data-type="entity-link">Enums</a>
+                    </li>
+                    <li class="link">
+                      <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="coverage.html"><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
+        </li>
+
+        <li class="divider"></li>
+        <li class="copyright">
+                Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                            <img data-src="images/compodoc-vectorise.svg" class="img-responsive" data-type="compodoc-logo">
+                </a>
+        </li>
+
+    </ul>
+
+</nav>
+        </div>
+
+        <div class="container-fluid main">
+           <div class="row main">
+               <div class="hidden-xs menu">
+                   <nav>
+
+    <ul class="list">
+
+        <li class="title">
+            <a href="index.html" data-type="index-link">cline documentation</a>
+        </li>
+
+        <li class="divider"></li>
+
+            <div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search">
+</div>
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="index.html"><span class="fa fa-home"></span>Getting started</a>
+            <ul class="links">
+                    <li class="link">
+                        <a 
+                            
+                             href="overview.html" 
+                             href="overview.html" 
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-th"></span>Overview
+                        </a>
+                    </li>
+                    <li class="link">
+                      <a href="index.html" data-type="chapter-link"><span class="fa fa-file-text-o"></span>README</a>
+                    </li>
+                    <li class="link">
+                            <a href="license.html"
+                        data-type="chapter-link">
+                            <span class="fa fa-fw fa-file-text-o"></span>LICENSE
+                        </a>
+                    </li>
+                    <li class="link">
+                        <a href="dependencies.html"
+                            data-type="chapter-link">
+                            <span class="fa fa-fw fa-list"></span>Dependencies
+                        </a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter modules">
+            <a data-type="chapter-link" href="modules.html">
+                <div class="menu-toggler linked" data-toggle="collapse"
+                        data-target="#modules-links"
+                >
+                    <span class="fa fa-fw fa-archive"></span>
+                    <span class="link-name">Modules</span>
+                    <span class="fa fa-angle-down"></span>
+                </div>
+            </a>
+            <ul class="links collapse"
+                    id="modules-links"
+>
+                    <li class="link">
+                        <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
+                            <li class="chapter inner">
+                                <div class="simple menu-toggler" data-toggle="collapse"
+                                        data-target="#components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+>
+                                    <span class="fa fa-fw fa-cogs"></span>
+                                    <span>Components</span>
+                                    <span class="fa fa-angle-down"></span>
+                                </div>
+                                <ul class="links collapse"
+                                        id="components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+>
+                                        <li class="link">
+                                            <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/CanvasComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">CanvasComponent</a>
+                                        </li>
+                                        <li class="link">
+                                            <a href="components/InterfaceComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">InterfaceComponent</a>
+                                        </li>
+                                </ul>
+                            </li>
+                    </li>
+            </ul>
+        </li>
+
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#classes-links"
+>
+                <span class="fa fa-fw fa-file-code-o"></span>
+                <span>Classes</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="classes-links"
+>
+                    <li class="link">
+                        <a href="classes/ClusterMatch.html" data-type="entity-link">ClusterMatch</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Dendrogram.html" data-type="entity-link">Dendrogram</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Extras.html" data-type="entity-link">Extras</a>
+                    </li>
+                    <li class="link">
+                        <a href="classes/Utils.html" data-type="entity-link">Utils</a>
+                    </li>
+            </ul>
+        </li>
+
+
+
+
+
+        <li class="chapter">
+            <div class="simple menu-toggler" data-toggle="collapse"
+                    data-target="#miscellaneous-links"
+>
+                <span class="fa fa-fw fa-cubes"></span>
+                <span>Miscellaneous</span>
+                <span class="fa fa-angle-down"></span>
+            </div>
+            <ul class="links collapse"
+                    id="miscellaneous-links"
+>
+                    <li class="link">
+                      <a href="miscellaneous/enumerations.html" data-type="entity-link">Enums</a>
+                    </li>
+                    <li class="link">
+                      <a href="miscellaneous/variables.html" data-type="entity-link">Variables</a>
+                    </li>
+            </ul>
+        </li>
+
+
+        <li class="chapter">
+            <a data-type="chapter-link" href="coverage.html"><span class="fa fa-fw fa-tasks"></span>Documentation coverage</a>
+        </li>
+
+        <li class="divider"></li>
+        <li class="copyright">
+                Documentation generated using <a href="https://compodoc.github.io/website/" target="_blank">
+                            <img data-src="images/compodoc-vectorise.svg" class="img-responsive" data-type="compodoc-logo">
+                </a>
+        </li>
+
+    </ul>
+
+</nav>
+               </div>
+               <!-- START CONTENT -->
+               <div class="content component">
+                   <div class="content-data">
+
+
+
+
+<ol class="breadcrumb">
+  <li>Components</li>
+  <li>CanvasComponent</li>
+</ol>
+
+<ul class="nav nav-tabs" role="tablist">
+        <li class="active">
+            <a href="#info" role="tab" id="info-tab" data-toggle="tab" data-link="info">Info</a>
+        </li>
+        <li >
+            <a href="#source" role="tab" id="source-tab" data-toggle="tab" data-link="source">Source</a>
+        </li>
+        <li >
+            <a href="#templateData" role="tab" id="templateData-tab" data-toggle="tab" data-link="template">Template</a>
+        </li>
+        <li >
+            <a href="#tree" role="tab" id="tree-tab" data-toggle="tab" data-link="dom-tree">DOM Tree</a>
+        </li>
+</ul>
+
+<div class="tab-content">
+    <div class="tab-pane fade active in" id="c-info"><p class="comment">
+    <h3>File</h3>
+</p>
+<p class="comment">
+    <code>src/app/canvas/canvas.component.ts</code>
+</p>
+
+    <p class="comment">
+        <h3>Description</h3>
+    </p>
+    <p class="comment">
+        <p>Component Description</p>
+
+    </p>
+
+
+    <p class="comment">
+        <h3>Implements</h3>
+    </p>
+    <p class="comment">
+                <code><a href="https://angular.io/api/core/OnInit" target="_blank" >OnInit</a></code>
+    </p>
+
+
+<section>
+    <h3>Metadata</h3>
+    <table class="table table-sm table-hover">
+        <tbody>
+
+            <tr>
+                <td class="col-md-3">changeDetection</td>
+                <td class="col-md-9"><code>ChangeDetectionStrategy.Default</code></td>
+            </tr>
+
+
+
+
+
+
+
+
+
+
+            <tr>
+                <td class="col-md-3">selector</td>
+                <td class="col-md-9"><code>app-canvas</code></td>
+            </tr>
+
+            <tr>
+                <td class="col-md-3">styleUrls</td>
+                <td class="col-md-9"><code>canvas.component.css</code></td>
+            </tr>
+
+
+
+            <tr>
+                <td class="col-md-3">templateUrl</td>
+                <td class="col-md-9"><code>./canvas.component.html</code></td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="index">Index</h3>
+    <table class="table table-sm table-bordered index-table">
+        <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Properties</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_canvasHeight">_canvasHeight</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_canvasWidth">_canvasWidth</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_dendroHeight">_dendroHeight</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_dendroWidth">_dendroWidth</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_display">_display</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_highlight">_highlight</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_matches">_matches</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#AXIS_HEIGHT">AXIS_HEIGHT</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#DENDRO_HEIGHT">DENDRO_HEIGHT</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#GRAPH_WIDTH">GRAPH_WIDTH</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#LABEL_WIDTH">LABEL_WIDTH</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#LEAF_PADDING">LEAF_PADDING</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#LEFT_PADDING">LEFT_PADDING</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#RIGHT_PADDING">RIGHT_PADDING</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                    <span class="modifier">Readonly</span>
+                                <a href="#TITLE_HEIGHT">TITLE_HEIGHT</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Methods</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_clearScene">_clearScene</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_drawAxis">_drawAxis</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_drawDendrogram">_drawDendrogram</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_drawEdges">_drawEdges</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_drawHighlightedPath">_drawHighlightedPath</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_drawMatches">_drawMatches</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_drawNodes">_drawNodes</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Private</span>
+                                <a href="#_drawTitle">_drawTitle</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#drawScene">drawScene</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getDisplay">getDisplay</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getHeight">getHeight</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#getWidth">getWidth</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#initDendrogramCoordinates">initDendrogramCoordinates</a>
+                            </li>
+                            <li>
+                                <a href="#ngOnInit">ngOnInit</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#updateClusterMatches">updateClusterMatches</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#updateMatchHighlight">updateMatchHighlight</a>
+                            </li>
+                            <li>
+                                    <span class="modifier">Public</span>
+                                <a href="#updateSize">updateSize</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Inputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#_dendrograms">_dendrograms</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <h6><b>Outputs</b></h6>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <ul class="index-list">
+                            <li>
+                                <a href="#changeCutoffEmitter">changeCutoffEmitter</a>
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+
+
+
+        </tbody>
+    </table>
+</section>
+
+    <section>
+    <h3 id="constructor">Constructor</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+<code>constructor()</code>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/app/canvas/canvas.component.ts:78</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Constructor</p>
+</div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    <h3 id="inputs">Inputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="_dendrograms"></a>
+                        <code>_dendrograms</code>
+                    </td>
+                    <td class="col-md-10">
+                        <div><p>Reference to the list of currently loaded Dendrogram structures kept by
+the main Application </p>
+</div>
+                            <p>
+                            <em>Type:</em>    <code><a href="../classes/Dendrogram.html" target="_self" >Dendrogram[]</a></code>
+
+                            </p>
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="61" class="link-to-prism">src/app/canvas/canvas.component.ts:61</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+    <section>
+    <h3 id="outputs">Outputs</h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-2">
+                        <a name="changeCutoffEmitter"></a>
+                        <code>changeCutoffEmitter</code>
+                    </td>
+                    <td class="col-md-10">
+                        <em><code>$event</code> type:</em>    <code><a href="https://angular.io/api/core/EventEmitter" target="_blank" >EventEmitter</a></code>
+
+                    </td>
+                </tr>
+                        <tr>
+                            <td class="col-md-2" colspan="2">
+                                    <div class="io-line">Defined in <a href="" data-line="56" class="link-to-prism">src/app/canvas/canvas.component.ts:56</a></div>
+                            </td>
+                        </tr>
+            </tbody>
+        </table>
+</section>
+
+
+    <section>
+    
+        <h3 id="methods">
+            Methods
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_clearScene"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _clearScene
+                            </b>
+                            <a href="#_clearScene"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>_clearScene()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="107" class="link-to-prism">src/app/canvas/canvas.component.ts:107</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Remove all SVG elements from the display component</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_drawAxis"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _drawAxis
+                            </b>
+                            <a href="#_drawAxis"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>_drawAxis(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, svg: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="126" class="link-to-prism">src/app/canvas/canvas.component.ts:126</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Draw the distance axis, showing the separation between root and leaves,
+together with a visual indication of the cutoff value used for the
+definition of inner labels, and thus for the calculation of cluster matches
+between consecutive structures.</p>
+<p>The cutoff widget should allow the user to dynamically define a new value,
+that is then forwarded to the corresponding Dendrogram in order to change
+the cluster matching and thus, the visualization as a whole.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>id</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The index of the Dendrogram being drawn</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>svg</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The root svg element where visual elements for axis will
+be added</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_drawDendrogram"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _drawDendrogram
+                            </b>
+                            <a href="#_drawDendrogram"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>_drawDendrogram(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="246" class="link-to-prism">src/app/canvas/canvas.component.ts:246</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Draw a single Dendrogram structure. To do so, it divides the process into
+different routines, to draw the title, axis, edges and nodes, in that
+order.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>id</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The index of the Dendrogram to be drawn</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_drawEdges"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _drawEdges
+                            </b>
+                            <a href="#_drawEdges"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>_drawEdges(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, svg: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="284" class="link-to-prism">src/app/canvas/canvas.component.ts:284</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Draw all the edges (paths between nodes) within a specific Dedrogram
+structure</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>id</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The index of the Dendrogram being drawn</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>svg</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The root dom element where edges will be added</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_drawHighlightedPath"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _drawHighlightedPath
+                            </b>
+                            <a href="#_drawHighlightedPath"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>_drawHighlightedPath(i: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, j: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="317" class="link-to-prism">src/app/canvas/canvas.component.ts:317</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Highlight the similarities or differences (according to user selection)
+across matching sub-clusters in different Dendrogram structures.</p>
+<p>TO-DO: Need to define a way to extend this process to multiple Dendrogram
+structures, as currently it only works for the highlighting of
+matches across consecutive Dendrograms, and not paying any attention to
+possible overlaps when more than 2 structures are on display.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>i</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The index of the first dendrogram in the comparisson</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>j</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The index of the second dendrogram in the comparisson</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_drawMatches"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _drawMatches
+                            </b>
+                            <a href="#_drawMatches"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>_drawMatches(i: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, j: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="348" class="link-to-prism">src/app/canvas/canvas.component.ts:348</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Matches between consecutive pairs of Dendrograms are represented by coloured
+lines that join the matched nodes on both structures.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>i</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The index of the first Dendrogram</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>j</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The index of the second Dendrogram</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_drawNodes"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _drawNodes
+                            </b>
+                            <a href="#_drawNodes"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>_drawNodes(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, svg: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="379" class="link-to-prism">src/app/canvas/canvas.component.ts:379</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Draw the nodes of the Dendrogram, both internal and leaves.</p>
+<p>Internal nodes are only represented by an circle, while leaves are also
+drawn with their respective labels.</p>
+<p>Additionally, all nodes show their matching label on hovering, and allow the
+user to vertically flip their components when clicked.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>id</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The index of the Dendrogram being drawn</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>svg</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The root dom element where nodes will be added</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_drawTitle"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _drawTitle
+                            </b>
+                            <a href="#_drawTitle"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>_drawTitle(id: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>, svg: <a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank">any</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="429" class="link-to-prism">src/app/canvas/canvas.component.ts:429</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Draw the title of a Dendrogram structure</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>id</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The id of the Dendrogram being drawn</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                                <tr>
+                                                        <td>svg</td>
+                                                        <td>
+                                                                    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>The root svg element where the title will be added</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="drawScene"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            drawScene
+                            </b>
+                            <a href="#drawScene"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>drawScene(drawMatches: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank">boolean</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="452" class="link-to-prism">src/app/canvas/canvas.component.ts:452</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Adds all the required elements for the visualization of Fendrograms to the
+SVG canvas of the application.</p>
+<p>Since the SVG canvas is a 2D plane, elements are drawn on top of eachother
+in a secuencial manner. Thus, the components for the final visualization
+are added in the following order:</p>
+<ol>
+<li>Draw the matches between clusters - if requested</li>
+<li>Draw the dendrogram structures</li>
+<li>Highlight cluster matches whithin the dendrogram structure</li>
+</ol>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Default value</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>drawMatches</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/boolean" target="_blank" >boolean</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code>true</code>
+                                                        </td>
+
+                                                        <td>
+                                                                <code><p>Indicates if matches between pairs of
+consecutive Dendrograms should be shown (default) or not.</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getDisplay"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            getDisplay
+                            </b>
+                            <a href="#getDisplay"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>getDisplay()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="479" class="link-to-prism">src/app/canvas/canvas.component.ts:479</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Provide access to the reference to the display canvas</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>The SVG display element</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getHeight"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            getHeight
+                            </b>
+                            <a href="#getHeight"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>getHeight()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="488" class="link-to-prism">src/app/canvas/canvas.component.ts:488</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Get the height, in pixels, of the drawing area</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>The height of the canvas</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="getWidth"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            getWidth
+                            </b>
+                            <a href="#getWidth"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>getWidth()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="496" class="link-to-prism">src/app/canvas/canvas.component.ts:496</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Get the width, in pixels, of the drawing area</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>The width of the canvas</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="initDendrogramCoordinates"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            initDendrogramCoordinates
+                            </b>
+                            <a href="#initDendrogramCoordinates"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>initDendrogramCoordinates(index: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="513" class="link-to-prism">src/app/canvas/canvas.component.ts:513</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>The original positioning of a dendrogram is always top to bottom, with the
+upper left coordinate of its bounding box matching the upper left corner of
+the canvas.
+In order to position it correctly, we need to rotate each structure by pi/2
+counter-clockwise, and then translate it to its final position.
+We apply these transformations by simply modifying the coordinates or the
+points used to position every node within the dendrogram structures.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Default value</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>index</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+                                                        <td>
+                                                                <code>-1</code>
+                                                        </td>
+
+                                                        <td>
+                                                                <code><p>The index of the Dendrogram whose coordinates need to
+be updated. If a default value of -1 is used, then all Dendrograms are
+updated</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="ngOnInit"></a>
+                        <span class="name">
+                            <b>
+                            ngOnInit
+                            </b>
+                            <a href="#ngOnInit"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+<code>ngOnInit()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="88" class="link-to-prism">src/app/canvas/canvas.component.ts:88</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Init basic properties of the canvas used for the visualization</p>
+</div>
+
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updateClusterMatches"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            updateClusterMatches
+                            </b>
+                            <a href="#updateClusterMatches"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>updateClusterMatches(minLeaves: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank">number</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="551" class="link-to-prism">src/app/canvas/canvas.component.ts:551</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Calculate the list of matches between consecutive pairs of Dendrogram
+structures.</p>
+<p>The resulting list of matches is stored as a 2D array of clusterMatch
+elements, where the i-th row contains the list of matches between the i-th
+and (i+1)-th Dendrogram structures.</p>
+<p>Each individual match is identified by a source (on the i-th Dendrogram)
+and a target (on the i+1-th Dendrogram) nodes. Also, each match is given a
+colour, to be used when displayed.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>minLeaves</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>A nmumber that represents the minimum amount of
+leaves a node needs to have, in order to be considered non-trivial, and
+being included in the sub-cluster matching routine</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updateMatchHighlight"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            updateMatchHighlight
+                            </b>
+                            <a href="#updateMatchHighlight"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>updateMatchHighlight(hlghtType: <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank">string</a>)</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="607" class="link-to-prism">src/app/canvas/canvas.component.ts:607</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>Update the type of hightlight that should be used on cluster matches.</p>
+</div>
+
+                            <div class="io-description">
+                                    <b>Parameters :</b>
+                                    <table class="params">
+                                        <thead>
+                                            <tr>
+                                                <td>Name</td>
+                                                    <td>Type</td>
+                                                <td>Optional</td>
+                                                    <td>Description</td>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                                <tr>
+                                                        <td>hlghtType</td>
+                                                        <td>
+                                                                    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+                                                        </td>
+                                                    
+                                                    <td>
+                                                            no
+                                                    </td>
+                                                    
+
+                                                        <td>
+                                                                <code><p>the type of highlight that should be applied to
+branches of matched clusters. Can take one of the following values: None
+(does not apply any highlight), Diff (to hightlight different branches) or
+Simi (to apply hightlight to identical branches).</p>
+</code>
+                                                        </td>
+                                                </tr>
+                                        </tbody>
+                                    </table>
+                            </div>
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >void</a></code>
+
+                            </div>
+                                <div class="io-description">
+                                    
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="updateSize"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Public</span>
+                            updateSize
+                            </b>
+                            <a href="#updateSize"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                            <span class="modifier-icon fa fa-reset"></span>
+                        <code>updateSize()</code>
+                    </td>
+                </tr>
+
+
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="627" class="link-to-prism">src/app/canvas/canvas.component.ts:627</a></div>
+                            </td>
+                        </tr>
+
+
+                <tr>
+                    <td class="col-md-4">
+                            <div class="io-description"><p>We use a pre-defined amount of pixels to draw each Dendrogram on screen.
+Since the positioning of the Dendrograms is side by side, we only need to
+update the width of the drawing canvas.</p>
+</div>
+
+                            <div>
+                            </div>
+                            <div class="io-description">
+                                <b>Returns : </b>    <code>number[]</code>
+
+                            </div>
+                                <div class="io-description">
+                                    <p>An arraw of two values, containing the width and height
+of the drawing canvas.</p>
+
+                                </div>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+</section>
+
+    <section>
+    
+        <h3 id="inputs">
+            Properties
+        </h3>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_canvasHeight"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _canvasHeight
+                            </b>
+                            <a href="#_canvasHeight"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>_canvasHeight:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="76" class="link-to-prism">src/app/canvas/canvas.component.ts:76</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The current height, in pixels, of the canvas element used for display </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_canvasWidth"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _canvasWidth
+                            </b>
+                            <a href="#_canvasWidth"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>_canvasWidth:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="74" class="link-to-prism">src/app/canvas/canvas.component.ts:74</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The current width, in pixels, of the canvas element used for display </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_dendroHeight"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _dendroHeight
+                            </b>
+                            <a href="#_dendroHeight"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>_dendroHeight:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="72" class="link-to-prism">src/app/canvas/canvas.component.ts:72</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The height of the LARGEST Dendrogram currently in the graph </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_dendroWidth"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _dendroWidth
+                            </b>
+                            <a href="#_dendroWidth"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>_dendroWidth:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="70" class="link-to-prism">src/app/canvas/canvas.component.ts:70</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The width of a SINGLE Dendrogram Graph, including graph, padding and label
+required space </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_display"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _display
+                            </b>
+                            <a href="#_display"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>_display:     <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://www.typescriptlang.org/docs/handbook/basic-types.html" target="_blank" >any</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="67" class="link-to-prism">src/app/canvas/canvas.component.ts:67</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Reference to the display element (canvas) of the DOM </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_highlight"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _highlight
+                            </b>
+                            <a href="#_highlight"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>_highlight:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/string" target="_blank" >string</a></code>
+
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="78" class="link-to-prism">src/app/canvas/canvas.component.ts:78</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>The type of highlight used on sub-cluster branches </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="_matches"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                            _matches
+                            </b>
+                            <a href="#_matches"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>_matches:     <code>any[]</code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code>any[]</code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>[]</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="64" class="link-to-prism">src/app/canvas/canvas.component.ts:64</a></div>
+                            </td>
+                        </tr>
+
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="AXIS_HEIGHT"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                                <span class="modifier">Readonly</span>
+                            AXIS_HEIGHT
+                            </b>
+                            <a href="#AXIS_HEIGHT"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>AXIS_HEIGHT:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>50</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="32" class="link-to-prism">src/app/canvas/canvas.component.ts:32</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Amount of pixels used to display the distance axis between root and leaves
+of a single Dendrogram </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="DENDRO_HEIGHT"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                                <span class="modifier">Readonly</span>
+                            DENDRO_HEIGHT
+                            </b>
+                            <a href="#DENDRO_HEIGHT"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>DENDRO_HEIGHT:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>200</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="45" class="link-to-prism">src/app/canvas/canvas.component.ts:45</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>TODO - maybe make this size depending on the number of leaves of the
+largest structure in the visualization </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="GRAPH_WIDTH"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                                <span class="modifier">Readonly</span>
+                            GRAPH_WIDTH
+                            </b>
+                            <a href="#GRAPH_WIDTH"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>GRAPH_WIDTH:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>350</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="41" class="link-to-prism">src/app/canvas/canvas.component.ts:41</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Width, in pixels, of a dendrogram plot, including only nodes and edges.
+Room for labels is accounted for separately </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="LABEL_WIDTH"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                                <span class="modifier">Readonly</span>
+                            LABEL_WIDTH
+                            </b>
+                            <a href="#LABEL_WIDTH"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>LABEL_WIDTH:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>100</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="53" class="link-to-prism">src/app/canvas/canvas.component.ts:53</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Width, in pixels, reserved for the display of leaves&#39; labels </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="LEAF_PADDING"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                                <span class="modifier">Readonly</span>
+                            LEAF_PADDING
+                            </b>
+                            <a href="#LEAF_PADDING"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>LEAF_PADDING:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>30</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="50" class="link-to-prism">src/app/canvas/canvas.component.ts:50</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Mimimum number of pixels that are left between two consecutive leafs in a
+dendrogram. Together with the number of leaves of the largest dendrogram
+currently in the visualization, will be used to determine the size of the
+canvas </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="LEFT_PADDING"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                                <span class="modifier">Readonly</span>
+                            LEFT_PADDING
+                            </b>
+                            <a href="#LEFT_PADDING"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>LEFT_PADDING:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>50</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="35" class="link-to-prism">src/app/canvas/canvas.component.ts:35</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Blank space at the LEFT of the left-end of each Dendrogram graph </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="RIGHT_PADDING"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                                <span class="modifier">Readonly</span>
+                            RIGHT_PADDING
+                            </b>
+                            <a href="#RIGHT_PADDING"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>RIGHT_PADDING:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>150</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="37" class="link-to-prism">src/app/canvas/canvas.component.ts:37</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Blank space left at the RIGHT of the right-end of each Dendrogram graph </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+        <table class="table table-sm table-bordered">
+            <tbody>
+                <tr>
+                    <td class="col-md-4">
+                        <a name="TITLE_HEIGHT"></a>
+                        <span class="name">
+                            <b>
+                                <span class="modifier">Private</span>
+                                <span class="modifier">Readonly</span>
+                            TITLE_HEIGHT
+                            </b>
+                            <a href="#TITLE_HEIGHT"><span class="fa fa-link"></span></a>
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="col-md-4">
+                        <span class="modifier-icon fa fa-reset"></span><code>TITLE_HEIGHT:     <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+</code>
+                    </td>
+                </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Type : </i>    <code><a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/number" target="_blank" >number</a></code>
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="col-md-4">
+                            <i>Default value : </i><code>50</code>
+                        </td>
+                    </tr>
+                        <tr>
+                            <td class="col-md-4">
+                                    <div class="io-line">Defined in <a href="" data-line="29" class="link-to-prism">src/app/canvas/canvas.component.ts:29</a></div>
+                            </td>
+                        </tr>
+
+                <tr>
+                    <td class="col-md-4">
+                        <div class="io-description"><p>Amount of pixels used to display the Title of each Dendrogram </p>
+</div>
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+</section>
+
+</div>
+
+
+    <div class="tab-pane fade  tab-source-code" id="c-source">
+        <pre class="line-numbers compodoc-sourcecode"><code class="language-typescript">import * as d3 from &#x27;d3&#x27;;
+
+import { Component, EventEmitter, OnInit, Output, Input, ChangeDetectionStrategy } from &#x27;@angular/core&#x27;;
+import { Dendrogram } from &#x27;../dendrogram&#x27;;
+import { Utils } from &#x27;../utils&#x27;;
+import { ClusterMatch } from &#x27;../clusterMatch&#x27;;
+
+/**
+ * Component Description
+ */
+@Component({
+  selector: &#x27;app-canvas&#x27;,
+  templateUrl: &#x27;./canvas.component.html&#x27;,
+  styleUrls: [&#x27;./canvas.component.css&#x27;],
+
+  changeDetection: ChangeDetectionStrategy.Default
+})
+
+/**
+ * Component used to handle the drawing of the canvas element, on which all
+ * Dendrograms and their matches will be displayed.
+ *
+ * Usually, the display responds to the different user interactions captured by
+ * the InterfaceComponent, relayed over by the main Application.
+ */
+export class CanvasComponent implements OnInit {
+
+  /** Amount of pixels used to display the Title of each Dendrogram */
+  private readonly TITLE_HEIGHT: number &#x3D; 50;
+  /** Amount of pixels used to display the distance axis between root and leaves
+   *  of a single Dendrogram */
+  private readonly AXIS_HEIGHT: number &#x3D; 50;
+
+  /** Blank space at the LEFT of the left-end of each Dendrogram graph */
+  private readonly LEFT_PADDING: number &#x3D; 50;
+  /** Blank space left at the RIGHT of the right-end of each Dendrogram graph */
+  private readonly RIGHT_PADDING: number &#x3D; 150;
+
+  /** Width, in pixels, of a dendrogram plot, including only nodes and edges.
+   *  Room for labels is accounted for separately */
+  private readonly GRAPH_WIDTH: number &#x3D; 350;
+
+  /** TODO - maybe make this size depending on the number of leaves of the
+   * largest structure in the visualization */
+  private readonly DENDRO_HEIGHT: number &#x3D; 200;
+  /** Mimimum number of pixels that are left between two consecutive leafs in a
+   *  dendrogram. Together with the number of leaves of the largest dendrogram
+   *  currently in the visualization, will be used to determine the size of the
+   *  canvas */
+  private readonly LEAF_PADDING: number &#x3D; 30;
+
+  /** Width, in pixels, reserved for the display of leaves&#x27; labels */
+  private readonly LABEL_WIDTH: number &#x3D; 100;
+
+  /* Update the display when the cutoff of a Dendrogram is changed */
+  @Output() changeCutoffEmitter &#x3D; new EventEmitter&lt;number&gt;();
+
+
+  /** Reference to the list of currently loaded Dendrogram structures kept by
+   *  the main Application */
+  @Input() _dendrograms: Dendrogram[];
+
+  /* current matches between dendrograms */
+  private _matches: any[] &#x3D; [];
+
+  /** Reference to the display element (canvas) of the DOM */
+  private _display: any;
+  /** The width of a SINGLE Dendrogram Graph, including graph, padding and label
+   *  required space */
+  private _dendroWidth: number;
+  /** The height of the LARGEST Dendrogram currently in the graph */
+  private _dendroHeight: number;
+  /** The current width, in pixels, of the canvas element used for display */
+  private _canvasWidth: number;
+  /** The current height, in pixels, of the canvas element used for display */
+  private _canvasHeight: number;
+  /** The type of highlight used on sub-cluster branches */
+  private _highlight:string;
+
+  /**
+   * Constructor
+   */
+  constructor() { }
+
+  /**
+   * Init basic properties of the canvas used for the visualization
+   */
+  ngOnInit() {
+    /* initialize the canvas as a D3 visualization element */
+    this._display &#x3D; d3.select(&#x27;svg&#x27;);
+
+    /* initialize the width of a single Dendrogram graph */
+    this._dendroWidth &#x3D; this.LEFT_PADDING + this.RIGHT_PADDING + this.GRAPH_WIDTH + this.LABEL_WIDTH;
+
+    /* based on the size of individual structures, initialize the size of the
+     * canvas area */
+    this._canvasWidth &#x3D; this._dendroWidth;
+    this._canvasHeight &#x3D; this.DENDRO_HEIGHT+this.TITLE_HEIGHT+this.AXIS_HEIGHT;
+
+    /* Initially, no highlight of branches is done */
+    this._highlight &#x3D; &quot;none&quot;;
+  }
+
+  /**
+   * Remove all SVG elements from the display component
+   */
+  private _clearScene(): void{
+    var prev: any &#x3D; this._display.selectAll(&#x27;*&#x27;);
+    prev.remove();
+  }
+
+  /**
+   * Draw the distance axis, showing the separation between root and leaves,
+   * together with a visual indication of the cutoff value used for the
+   * definition of inner labels, and thus for the calculation of cluster matches
+   * between consecutive structures.
+   *
+   * The cutoff widget should allow the user to dynamically define a new value,
+   * that is then forwarded to the corresponding Dendrogram in order to change
+   * the cluster matching and thus, the visualization as a whole.
+   *
+   * @param {number} id The index of the Dendrogram being drawn
+   * @param {any} svg The root svg element where visual elements for axis will
+   * be added
+   */
+  private _drawAxis(id: number, svg: any):void{
+    /* reference for use inside annonymous function */
+    var self: any &#x3D; this
+    /* the current value for the cutoff */
+    var cutoff: number &#x3D; this._dendrograms[id].getCutoff();
+    /* the distance between the root and the leaves of the Dendrogram */
+    var dist: number &#x3D; this._dendrograms[id].getRoot().data[&quot;distance&quot;];
+    /* pixel value of the left-side boundary for the axis */
+    var xmin: number &#x3D; id * this._dendroWidth;
+    xmin +&#x3D; this._dendrograms[id].getFlipped() ? this._dendroWidth - this.RIGHT_PADDING : this.LEFT_PADDING;
+    /* pixel value of the right-side boundary for the axis */
+    var xmax: number &#x3D; xmin;
+    xmax +&#x3D; this._dendrograms[id].getFlipped() ? -this.GRAPH_WIDTH : this.GRAPH_WIDTH;
+    /* pixel value for the current position of the cutoff widget */
+    var x: number &#x3D; xmax - (xmax-xmin)*cutoff/dist;
+    /* pixel value for the vertical positioning of the axis */
+    var y: number &#x3D; this.TITLE_HEIGHT;
+
+    /* Visual representation of the axis, as a horizontal line, with two end
+     * widgents, that extends from the root on the left, to the position of the
+     * leaves in the right */
+    svg.append(&quot;path&quot;)
+      .attr(&quot;class&quot;, &quot;dendro-axis&quot;)
+      .attr(&quot;d&quot;, &quot;M &quot;+ xmin + &quot;, &quot; + y
+          + &quot; L &quot;+ xmax +&quot;, &quot;+ y
+          + &quot; M &quot;+ xmin +&quot;, &quot;+ (y-5)
+          + &quot; L &quot;+ xmin +&quot;, &quot;+ (y+5)
+          + &quot; M &quot;+ xmax +&quot;, &quot;+ (y-5)
+          + &quot; L &quot;+ xmax +&quot;, &quot;+ (y+5)
+      )
+    ;
+    /* Drawing of the left-most value for the distance axis */
+    svg.append(&quot;text&quot;)
+      .attr(&quot;class&quot;, &quot;dendro-axis&quot;)
+      .attr(&quot;x&quot;, xmin)
+      .attr(&quot;y&quot;, y-7)
+      .text(dist.toFixed(2))
+    ;
+    /* Drawing of the right-most value of the distance axis */
+    svg.append(&quot;text&quot;)
+      .attr(&quot;class&quot;, &quot;dendro-axis&quot;)
+      .attr(&quot;x&quot;, xmax)
+      .attr(&quot;y&quot;, y-7)
+      .text(&quot;0&quot;)
+    ;
+    /* Add the visual components for the cutoff. These include a draggable
+     * widget that moves along the distance axis, the current value for the
+     * cutoff, and a vertical line that spans the whole Dendrogram
+     * TO-DO make the line draggable*/
+    /* Interactive widget (circle) used to modify the cutoff value */
+    svg.append(&quot;circle&quot;)
+      .data([{ x: x, y: y }])
+      .attr(&quot;class&quot;, &quot;dendro-cutoff&quot;)
+      .attr(&quot;cx&quot;, function(d){ return d.x; } )
+      .attr(&quot;cy&quot;, function(d){ return d.y; } )
+      .attr(&quot;r&quot;, 4)
+      .call(d3.drag()
+        .on(&quot;drag&quot;, dragged)
+        .on(&quot;end&quot;, dragend)
+      )
+    ;
+    /* Current value for the cutoff */
+    svg.append(&quot;text&quot;)
+      .data([{ x: x, y: y }])
+      .attr(&quot;class&quot;, &quot;dendro-cutoff&quot;)
+      .attr(&quot;x&quot;, function(d){ return d.x; })
+      .attr(&quot;y&quot;, function(d){ return d.y+25; })
+      .text((this._dendrograms[id].getCutoff()).toFixed(2))
+    ;
+    /* Vertical line to span the Dendrogram to show the current cutoff value */
+    svg.append(&quot;path&quot;)
+      .data([{ x: x, y: y }])
+      .attr(&quot;class&quot;, &quot;dendro-cutoff&quot;)
+      .attr(&quot;d&quot;, function(d){
+          return &quot;M &quot;+d.x+&quot;, &quot; +(d.y+30)+&quot; L &quot;+d.x+&quot;, &quot;+self._canvasHeight;
+        }
+      )
+    ;
+    /* Internal function used to update the position of the visual components
+     * associated to the cutoff value, whenever the user drags the corresponding
+     * widget */
+    function dragged(d){
+      var dpix: number &#x3D; Math.abs(xmax-xmin);
+      if( !self._dendrograms[id].getFlipped() ){
+        x &#x3D; d3.event.x &gt; xmax ? xmax : d3.event.x &lt; xmin ? xmin : d3.event.x;
+        cutoff &#x3D; dist - (dist*(x-xmin)/dpix);
+      }
+      else{
+        x &#x3D; d3.event.x &lt; xmax ? xmax : d3.event.x &gt; xmin ? xmin : d3.event.x;
+        cutoff &#x3D; dist*(x-xmax)/dpix;
+      }
+      d3.select(this)
+        .attr(&quot;cx&quot;, d.x &#x3D; x)
+      ;
+      d3.select(this.parentNode).selectAll(&quot;text.dendro-cutoff&quot;)
+        .attr(&quot;x&quot;, d.x &#x3D; x)
+        .text(cutoff.toFixed(2))
+      ;
+      d3.select(this.parentNode).selectAll(&quot;path.dendro-cutoff&quot;)
+        .attr(&quot;d&quot;, &quot;M &quot;+x+&quot;, &quot;+(d.y+30)+&quot; L &quot;+x+&quot;, &quot;+self._canvasHeight)
+      ;
+    }
+    /* Only when the user finishes to drag the widget, a call is made for the
+     * scene to be updated, using the new cutoff for internal node label
+     * definition
+     * TODO - Updating labels means cluster-matches could have changed too, so
+     * need to have a look at that too. */
+    function dragend(d){
+      self._dendrograms[id].setCutoff(Number.parseFloat(cutoff.toFixed(2)));
+      self.changeCutoffEmitter.emit(id);
+    }
+  }
+
+  /**
+   * Draw a single Dendrogram structure. To do so, it divides the process into
+   * different routines, to draw the title, axis, edges and nodes, in that
+   * order.
+   *
+   * @param {number} id The index of the Dendrogram to be drawn
+   */
+  private _drawDendrogram(id: number): void{
+    /* Each Dendrogram is drawn in its own group within the SVG tree. Every
+     * graphic element associated with this Dendrogram will be nested inside
+     * this original group */
+    var graph: any &#x3D; this._display.append(&quot;g&quot;)
+      .attr(&quot;class&quot;, &quot;dendrogram&quot;)
+      .attr(&quot;id&quot;, &quot;dendro&quot;+id)
+    ;
+
+    /* 1. Dendrogram&#x27;s Title */
+    this._drawTitle(id, graph);
+
+    /* 2. Dendrogram&#x27;s distance Axis */
+    var axis: any &#x3D; graph.append(&quot;g&quot;)
+      .attr(&quot;class&quot;, &quot;dendrogram-axis&quot;)
+    ;
+    this._drawAxis(id, axis);
+
+    /* 3. Dendrogram&#x27;s Edges */
+    var edges: any &#x3D; graph.append(&quot;g&quot;)
+      .attr(&quot;class&quot;, &quot;dendrogram-edges&quot;)
+    ;
+    this._drawEdges(id, edges);
+
+    /* 4. Dendrogram&#x27; Nodes */
+    var nodes: any &#x3D; graph.append(&quot;g&quot;)
+      .attr(&quot;class&quot;, &quot;dendrogram-nodes&quot;)
+    ;
+    this._drawNodes(id, nodes);
+  }
+
+  /**
+   * Draw all the edges (paths between nodes) within a specific Dedrogram
+   * structure
+   *
+   * @param {number} id The index of the Dendrogram being drawn
+   * @param {any} svg The root dom element where edges will be added
+   */
+  private _drawEdges(id: number, svg:any): void{
+    /* From the Dendrogram, load the data used for each edge */
+    var edges &#x3D; svg.selectAll(&quot;path&quot;)
+      .data(this._dendrograms[id].getRoot().links())
+    ;
+    /* Based on the data, create an element for every edge in the structure */
+    edges.enter().append(&quot;path&quot;)
+      .attr(&quot;class&quot;, &quot;edge&quot;)
+      .attr(&quot;stroke&quot;, &quot;gray&quot;)
+      .attr(&quot;id&quot;, function(d){
+        return d.source.data[&quot;id&quot;]+d.target.data[&quot;id&quot;];
+      })
+      .attr(&quot;d&quot;, function(d){
+        return &quot;M &quot;+d.source.x+&quot;, &quot;+d.source.y
+        + &quot; L &quot;+d.source.x+&quot;, &quot;+d.target.y
+        + &quot; M &quot;+d.source.x+&quot;, &quot;+d.target.y
+        + &quot; L &quot;+d.target.x+&quot;, &quot;+d.target.y;
+      })
+    ;
+  }
+
+  /**
+   * Highlight the similarities or differences (according to user selection)
+   * across matching sub-clusters in different Dendrogram structures.
+   *
+   * TO-DO: Need to define a way to extend this process to multiple Dendrogram
+   * structures, as currently it only works for the highlighting of
+   * matches across consecutive Dendrograms, and not paying any attention to
+   * possible overlaps when more than 2 structures are on display.
+   *
+   * @param {number} i The index of the first dendrogram in the comparisson
+   * @param {number} j The index of the second dendrogram in the comparisson
+   */
+  private _drawHighlightedPath(i:number, j:number): void{
+    /* for each set of cluster matches across consecutive pairs of Dendrogram
+     * structures */
+    for( var k&#x3D;0; k&lt;this._matches[i].length; ++k ){
+      var match &#x3D; this._matches[i][k];
+      /* request the IDs of all edges that are part of each match */
+      var targets: string[] &#x3D; match.getEqualMatches();
+      /* colour branches on the i-th Dendrogram */
+      var dom: any &#x3D; this._display.selectAll(&quot;#dendro&quot;+i);
+      for (var x&#x3D;0; x&lt;targets[0].length; ++x){
+        dom.selectAll(&quot;#&quot;+targets[0][x])
+          .attr(&quot;stroke&quot;, match.getColor())
+        ;
+      }
+      /* colour branches on the j-th Dendrogram */
+      dom &#x3D; this._display.selectAll(&quot;#dendro&quot;+j);
+      for (var x&#x3D;0; x&lt;targets[1].length; ++x){
+        dom.selectAll(&quot;#&quot;+targets[1][x])
+          .attr(&quot;stroke&quot;, match.getColor())
+        ;
+      }
+    }
+  }
+
+  /**
+   * Matches between consecutive pairs of Dendrograms are represented by coloured
+   * lines that join the matched nodes on both structures.
+   *
+   * @param {number} i The index of the first Dendrogram
+   * @param {number} j The index of the second Dendrogram
+   */
+  private _drawMatches(i:number, j:number): void{
+    // add a new group to the svg, to represent the set of lines connecting
+    // dendrograms
+    var g3 &#x3D; this._display.append(&quot;g&quot;)
+      .attr(&quot;id&quot;, &quot;lines&quot;+i+&quot;-&quot;+j);
+    /* add line elements for each cluster match */
+    var lines &#x3D; g3.selectAll(&quot;line&quot;)
+       .data(this._matches[i]);
+    // define the drawing properties of each line
+    lines.enter().append(&quot;line&quot;)
+      .attr(&quot;stroke-width&quot;, function(d){ return d[&quot;size&quot;]; })
+      .attr(&quot;stroke&quot;, function(d){ return d.getColor(); })
+      .attr(&quot;x1&quot;, function(d){ return d._sourceNode.x;})
+      .attr(&quot;x2&quot;, function(d){ return d._targetNode.x;})
+      .attr(&quot;y1&quot;, function(d){ return d._sourceNode.y;})
+      .attr(&quot;y2&quot;, function(d){ return d._targetNode.y;})
+      ;
+  }
+
+  /**
+   * Draw the nodes of the Dendrogram, both internal and leaves.
+   *
+   * Internal nodes are only represented by an circle, while leaves are also
+   * drawn with their respective labels.
+   *
+   * Additionally, all nodes show their matching label on hovering, and allow the
+   * user to vertically flip their components when clicked.
+   *
+   * @param {number} id The index of the Dendrogram being drawn
+   * @param {any} svg The root dom element where nodes will be added
+   */
+  private _drawNodes(id: number, svg: any): void{
+    /* Reference to be used inside annonymous functions */
+    var self: any &#x3D; this;
+    /* From the Dendrogram, load the information on nodes */
+    var nodes &#x3D; svg.selectAll(&quot;.node&quot;)
+      .data(this._dendrograms[id].getRoot().descendants())
+    ;
+    /* For each node in the Dendrogram, we create an element in the svg
+     * component */
+    var node &#x3D; nodes.enter().append(&quot;g&quot;)
+      .attr(&quot;class&quot;, function(d){
+        var flip &#x3D; self._dendrograms[id].getFlipped() ? &quot; flip&quot; : &quot;&quot;;
+        return d.value &#x3D;&#x3D; 1 ? &quot;node leaf&quot;+flip : &quot;node internal&quot;+flip;
+      })
+    ;
+    /* Add a circle to represent each node */
+    node.append(&quot;circle&quot;)
+      .attr(&quot;id&quot;, function(d){ return d.data.name; } )
+      .attr(&quot;cx&quot;, function(d){ return d.x })
+      .attr(&quot;cy&quot;, function(d){ return d.y })
+      .attr(&quot;r&quot;, 4)
+      .on(&quot;click&quot;, function(target){
+        self._dendrograms[id].flipYNode(target);
+        self.drawScene();
+      })
+      .append(&quot;svg:title&quot;)
+        .text(function(d){
+          return d.data.label &#x3D;&#x3D; undefined ? &quot;None&quot; : d.data.label;
+        });
+
+    /* nodes also have asociated a text, drawn from their name property, note
+     * that internal nodes have a blank name, and thus this will only show the
+     * corresponding label of leaf nodes */
+    node.append(&quot;text&quot;)
+      .attr(&quot;x&quot;, function(d){ return d.x })
+      .attr(&quot;y&quot;, function(d){ return d.y })
+      .attr(&quot;dx&quot;, function(d){ return self._dendrograms[id].getFlipped() ? -8 : 8; })
+      .text(function(d){ return d.data.name; })
+      .attr(&quot;class&quot;, function(d){
+        var flip &#x3D; self._dendrograms[id].getFlipped() ? &quot;flip &quot; : &quot;&quot;;
+        return d.value &#x3D;&#x3D; 1 ? flip+&quot;leaf node&quot; : flip+&quot;internal node&quot;;
+      });
+  }
+
+  /**
+   * Draw the title of a Dendrogram structure
+   *
+   * @param {number} id The id of the Dendrogram being drawn
+   * @param {any} svg The root svg element where the title will be added
+   */
+  private _drawTitle(id: number, svg: any): void{
+    svg.append(&quot;text&quot;)
+      .attr(&quot;class&quot;, &quot;dendro-title&quot;)
+      .attr(&quot;x&quot;, id*this._dendroWidth + this._dendroWidth/2 )
+      .attr(&quot;y&quot;, 20)
+      .text(this._dendrograms[id].getTitle())
+      ;
+  }
+
+  /**
+   * Adds all the required elements for the visualization of Fendrograms to the
+   * SVG canvas of the application.
+   *
+   * Since the SVG canvas is a 2D plane, elements are drawn on top of eachother
+   * in a secuencial manner. Thus, the components for the final visualization
+   * are added in the following order:
+   * 1. Draw the matches between clusters - if requested
+   * 2. Draw the dendrogram structures
+   * 3. Highlight cluster matches whithin the dendrogram structure
+   *
+   * @param {boolean} drawMatches Indicates if matches between pairs of
+   * consecutive Dendrograms should be shown (default) or not.
+   */
+  public drawScene(drawMatches: boolean &#x3D; true):void {
+    /* Before a new frame can be drawn, we need to clear the canvas */
+    this._clearScene();
+
+    /* 1. Draw matches between pairs of consecutive Dendrograms */
+    if( drawMatches &amp;&amp; this._dendrograms.length &gt;&#x3D; 2){
+      for(var i&#x3D;0; i&lt;this._dendrograms.length-1; ++i )
+        this._drawMatches(i, i+1);
+    }
+
+    /* 2. Draw Dendrogram structures */
+    for(var i: number &#x3D; 0; i&lt;this._dendrograms.length; ++i )
+      this._drawDendrogram(i);
+
+    /* 3. Highlight edges according to the matches between Dendrograms sub-clusters */
+    if( drawMatches &amp;&amp; this._highlight !&#x3D;&#x3D; &quot;none&quot; &amp;&amp; this._dendrograms.length &gt;&#x3D; 2){
+      for(var i&#x3D;0; i&lt;this._dendrograms.length-1; ++i){
+        this._drawHighlightedPath(i, i+1);
+      }
+    }
+  }
+
+  /**
+   * Provide access to the reference to the display canvas
+   *
+   * @returns {Object} The SVG display element
+   */
+  public getDisplay(): any{
+    return this._display;
+  }
+
+  /**
+   * Get the height, in pixels, of the drawing area
+   *
+   * @returns {int} The height of the canvas
+   */
+  public getHeight(): number{
+    return this._canvasHeight;
+  }
+
+  /**
+   * Get the width, in pixels, of the drawing area
+   * @returns {int} The width of the canvas
+   */
+  public getWidth(): number{
+    return this._canvasWidth;
+  }
+
+  /**
+   * The original positioning of a dendrogram is always top to bottom, with the
+   * upper left coordinate of its bounding box matching the upper left corner of
+   * the canvas.
+   * In order to position it correctly, we need to rotate each structure by pi/2
+   * counter-clockwise, and then translate it to its final position.
+   * We apply these transformations by simply modifying the coordinates or the
+   * points used to position every node within the dendrogram structures.
+   *
+   * @param {number} index The index of the Dendrogram whose coordinates need to
+   * be updated. If a default value of -1 is used, then all Dendrograms are
+   * updated
+   */
+  public initDendrogramCoordinates(index: number &#x3D; -1): void{
+    // each dendrogram needs to be displaced on X according to the number of
+    // pixels needed to fit each dendrogram structure
+    var dx: number &#x3D; this.GRAPH_WIDTH + this.LABEL_WIDTH + this.LEFT_PADDING + this.RIGHT_PADDING;
+    // in Y, we need to consider the height of the dendrogram (to nullify
+    // counter clockwise rotation) plus the space required for title and axis
+    // var dy: number &#x3D; this.DENDRO_HEIGHT + this.TITLE_HEIGHT + this.AXIS_HEIGHT;
+    var dy: number &#x3D; this._dendroHeight + this.TITLE_HEIGHT + this.AXIS_HEIGHT;
+    if( index !&#x3D;&#x3D; -1 ){
+      this._dendrograms[index].updateCoordinates(dx*index+this.LEFT_PADDING, dy, this.GRAPH_WIDTH,
+        // this.DENDRO_HEIGHT, this.LABEL_WIDTH);
+        this._dendroHeight, this.LABEL_WIDTH);
+      return ;
+    }
+
+
+    for(var i:number &#x3D; 0; i&lt;this._dendrograms.length; ++i)
+      this._dendrograms[i].updateCoordinates(dx*i+this.LEFT_PADDING, dy, this.GRAPH_WIDTH,
+        // this.DENDRO_HEIGHT, this.LABEL_WIDTH);
+        this._dendroHeight, this.LABEL_WIDTH);
+  }
+
+  /**
+   * Calculate the list of matches between consecutive pairs of Dendrogram
+   * structures.
+   *
+   * The resulting list of matches is stored as a 2D array of clusterMatch
+   * elements, where the i-th row contains the list of matches between the i-th
+   * and (i+1)-th Dendrogram structures.
+   *
+   * Each individual match is identified by a source (on the i-th Dendrogram)
+   * and a target (on the i+1-th Dendrogram) nodes. Also, each match is given a
+   * colour, to be used when displayed.
+   *
+   * @param {number} minLeaves A nmumber that represents the minimum amount of
+   * leaves a node needs to have, in order to be considered non-trivial, and
+   * being included in the sub-cluster matching routine
+   */
+  public updateClusterMatches(minLeaves: number): void{
+    /* reset the list of matches */
+    this._matches &#x3D; [];
+
+    /* No matches can be calculated when there is less than 2 structures */
+    if( this._dendrograms.length &lt; 2 ) return;
+
+    /* 1. Calculate the matches
+     * This needs to be done for each pair of consecutive structures in the
+     * Dendrograms list */
+    for(var i&#x3D;0; i&lt;this._dendrograms.length-1; ++i ){
+      var set &#x3D; this._dendrograms[i].findMatchingClusters(
+        this._dendrograms[i].getRoot(),
+        this._dendrograms[i+1], minLeaves)
+      ;
+      /* add the matches to the current list */
+      this._matches.push(set);
+    }
+
+    /* 2. Give each match a colour
+     * For colour definition we use D3&#x27;s scale-chromatic extension. Since each
+     * match is based on the node&#x27;s label, we can use that to assign the same
+     * colour to a match that occurs across more than one pair of Dendrogram.
+     * Disticnt matches will be assigned distinct colours whenever possible, but
+     * colours will be re-used if the number of clusters surpass the number of
+     * available colours for a particular scheme.*/
+    var idx &#x3D; 0;
+    var colors &#x3D; {};
+    var scheme &#x3D; d3.schemeSet1;
+
+    // go through the matches between every dendrogram pair
+    for(var i&#x3D;0; i&lt;this._matches.length; ++i){
+      // and then through each cluster match within a specific dendrogram pair
+      for(var j&#x3D;0; j&lt;this._matches[i].length; ++j){
+        /* check if a coulour has already been defined for clusters with the
+         * same label, and if not, assign them a value */
+        if( colors[this._matches[i][j].getLabel()] &#x3D;&#x3D;&#x3D; undefined ){
+          colors[this._matches[i][j].getLabel()] &#x3D; scheme[idx%scheme.length];
+          ++idx;
+        }
+        console.log(&quot;Match&quot;,i,j,colors[this._matches[i][j].getLabel()]);
+        this._matches[i][j].setColor(colors[this._matches[i][j].getLabel()]);
+        /* Re-define the highlight of branches within the match */
+        this._matches[i][j].initEqualBranches(this._highlight);
+      }
+    }
+  }
+
+  /**
+   * Update the type of hightlight that should be used on cluster matches.
+   *
+   * @param {string} hlghtType the type of highlight that should be applied to
+   * branches of matched clusters. Can take one of the following values: None
+   * (does not apply any highlight), Diff (to hightlight different branches) or
+   * Simi (to apply hightlight to identical branches).
+   */
+  public updateMatchHighlight(hlghtType: string): void{
+    this._highlight &#x3D; hlghtType;
+    /* Matches are stored in a 2-dimensional list, where each row stores all
+     * the matches for a particular pair of Dendrograms, and each column stores
+     * and individual match */
+    for(var i&#x3D;0; i&lt;this._matches.length; ++i){
+      for(var j&#x3D;0; j&lt;this._matches[i].length; ++j){
+        this._matches[i][j].initEqualBranches(hlghtType);
+      }
+    }
+  }
+
+  /**
+   * We use a pre-defined amount of pixels to draw each Dendrogram on screen.
+   * Since the positioning of the Dendrograms is side by side, we only need to
+   * update the width of the drawing canvas.
+   *
+   * @returns {number[]} An arraw of two values, containing the width and height
+   * of the drawing canvas.
+   */
+  public updateSize(): number[]{
+    /** Check for the largest dendrogram in the visualization, to use its size
+     *  as parameter for the whole visualization */
+    this._dendroHeight &#x3D; 0;
+    for(var i&#x3D;0; i&lt;this._dendrograms.length; ++i ){
+      let size: number &#x3D; this._dendrograms[i].getLeafCount() * this.LEAF_PADDING;
+      if ( size &gt; this._dendroHeight )
+        this._dendroHeight &#x3D; size;
+    }
+
+    this._canvasWidth &#x3D; this._dendrograms.length * this._dendroWidth;
+    this._canvasHeight &#x3D; this._dendroHeight + this.TITLE_HEIGHT + this.AXIS_HEIGHT;
+
+    window.dispatchEvent(new Event(&#x27;resize&#x27;));
+    return [this._canvasWidth, this._canvasHeight];
+  }
+
+}
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-templateData">
+        <pre class="line-numbers"><code class="language-html">&lt;svg
+  name&#x3D;&quot;display&quot;
+  id&#x3D;&quot;display&quot;
+  attr.width&#x3D;&quot;{{_canvasWidth}}&quot;
+  attr.height&#x3D;&quot;{{_canvasHeight}}&quot; &gt;
+&lt;/svg&gt;
+</code></pre>
+    </div>
+
+    <div class="tab-pane fade " id="c-tree">
+        <div id="tree-container"></div>
+        <div class="tree-legend">
+            <div class="title">
+                <b>Legend</b>
+            </div>
+            <div>
+                <div class="color htmlelement"></div><span>Html element</span>
+            </div>
+            <div>
+                <div class="color component"></div><span>Component</span>
+            </div>
+            <div>
+                <div class="color directive"></div><span>Html element with directive</span>
+            </div>
+        </div>
+    </div>
+
+    
+</div>
+
+<script src="../js/libs/vis.min.js"></script>
+<script src="../js/libs/htmlparser.js"></script>
+<script src="../js/libs/deep-iterator.js"></script>
+<script>
+        var COMPONENT_TEMPLATE = '<div><svg  name="display"  id="display"  attr.width="{{_canvasWidth}}"  attr.height="{{_canvasHeight}}" ></svg></div>'
+    var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CanvasComponent', 'selector': 'app-canvas'},{'name': 'InterfaceComponent', 'selector': 'app-interface'}];
+    var DIRECTIVES = [];
+    var ACTUAL_COMPONENT = {'name': 'CanvasComponent'};
+</script>
+<script src="../js/tree.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+                   </div><div class="search-results">
+    <div class="has-results">
+        <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+        <ul class="search-results-list"></ul>
+    </div>
+    <div class="no-results">
+        <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+    </div>
+</div>
+</div>
+               <!-- END CONTENT -->
+           </div>
+       </div>
+
+       <script src="../js/libs/bootstrap-native.js"></script>
+
+       <script src="../js/libs/es6-shim.min.js"></script>
+       <script src="../js/libs/EventDispatcher.js"></script>
+       <script src="../js/libs/promise.min.js"></script>
+       <script src="../js/libs/zepto.min.js"></script>
+
+       <script src="../js/compodoc.js"></script>
+
+        <script>
+            var COMPODOC_CURRENT_PAGE_DEPTH = 1;
+            var COMPODOC_CURRENT_PAGE_CONTEXT = 'component';
+            var COMPODOC_CURRENT_PAGE_URL = 'CanvasComponent.html';
+        </script>
+
+       <script src="../js/search/search.js"></script>
+       <script src="../js/search/lunr.min.js"></script>
+       <script src="../js/search/search-lunr.js"></script>
+
+       <script src="../js/tabs.js"></script>
+       <script src="../js/menu.js"></script>
+       <script src="../js/libs/prism.js"></script>
+       <script src="../js/sourceCode.js"></script>
+       <script src="../js/search/search_index.js"></script>
+
+
+    </body>
+</html>
