@@ -52,7 +52,7 @@ export class InterfaceComponent implements OnInit, AfterViewInit {
 
   /** Reference to the Select item in the Template, available for the user to
    *  choose an element to remove from the visualization */
-  @ViewChild('removeDendrogramSelect') removeDendrogramSelect: ElementRef;
+  @ViewChild('removeDendrogramSelect', {static: false}) removeDendrogramSelect: ElementRef;
 
   /** Reference to the Select item in the Template, available for the user to
    *  choose the type of highlighting to be used on matched Dendrogram clusters.
@@ -60,11 +60,11 @@ export class InterfaceComponent implements OnInit, AfterViewInit {
    *  none - (no highlight),
    *  diff - (highlight the differences in the branches) or
    *  simi - (highlight the similarities in the branches) */
-  @ViewChild('highlightTypeSelect') highlightTypeSelect: ElementRef;
+  @ViewChild('highlightTypeSelect', {static: false}) highlightTypeSelect: ElementRef;
 
   /** Reference to the Select item in the Template, available for the user to
    *  horizontally flip a specific Dendrogram structure */
-  @ViewChild('flipDendrogramSelect') flipDendrogramSelect: ElementRef;
+  @ViewChild('flipDendrogramSelect', {static: false}) flipDendrogramSelect: ElementRef;
 
   /** the names of the dendrogram structures currently on display */
   private dendrogramNames: string[];
