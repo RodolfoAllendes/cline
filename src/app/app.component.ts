@@ -34,9 +34,9 @@ export class AppComponent {
   private _title: string = "Dendrogram (Sub)Cluster Match Visualization System";
 
   /** link to the canvas element where the visualization takes place */
-  @ViewChild('canvas') _canvas: CanvasComponent;
+  @ViewChild('canvas', {static: false}) _canvas: CanvasComponent;
   /** link to the interface component */
-  @ViewChild('interface') _interface: InterfaceComponent;
+  @ViewChild('interface', {static: false}) _interface: InterfaceComponent;
 
   /**
    * Handle the changing of higlighting options for edges in matching sub-
