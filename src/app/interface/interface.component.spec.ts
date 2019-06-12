@@ -38,7 +38,7 @@ describe('InterfaceComponent', () => {
     input.selectedIndex = 1;
     input.dispatchEvent(new Event('change'));
     fixture.whenStable().then( ()=>{
-      expect(component.changeHighlightTypeEmitter.emit).toHaveBeenCalledWith("diff");
+      expect(component.changeHighlightTypeEmitter.emit).toHaveBeenCalledWith("simi");
     });
   });
 
@@ -50,7 +50,7 @@ describe('InterfaceComponent', () => {
     input.dispatchEvent(new Event('change'));
     fixture.whenStable().then( ()=>{
       expect(component.changeMatchTypeEmitter.emit).toHaveBeenCalledWith(1);
-      expect(input[0].label).toBe("ISOMORPHIC");
+      expect(input[0].label).toBe("BIOISOMORPHIC");
     });
   });
 
