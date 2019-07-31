@@ -1,0 +1,1 @@
+((('setosa.1':0.58,('setosa.2':0.31,('setosa.3':0.24,'virginica.5':0.24):0.07):0.27):0.52,(('virginica.2':0.44,'versicolor.2':0.44):0.26,('versicolor.1':0.41,('virginica.4':0.24,('virginica.1':0.14,'virginica.3':0.14):0.1):0.17):0.17):0.52):3.81);
