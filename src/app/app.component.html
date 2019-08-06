@@ -1,6 +1,5 @@
 <!--The content below is only a placeholder and can be replaced.-->
 <div style="text-align:center">
-  <h1>CLINE: A web-tool for the Comparison of Biological Dendrogram Structures</h1>
 
   <app-interface #interface
     (loadDendrogramEmitter)="onLoadDendro($event)"
@@ -16,6 +15,7 @@
     (saveSVGEmitter)="onSaveSVG($event)"
   >
   </app-interface>
+  <br />
   <app-canvas #canvas
     (changeCutoffEmitter)="onChangeCutoff($event)"
     [_dendrograms]="_dendrograms" >

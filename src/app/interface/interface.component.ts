@@ -17,7 +17,7 @@ import { ClusterMatchEnum } from '../clusterMatchType';
  * of the available interface, and propagate these through to the appropriate
  * handlers in the main application file.
  */
-export class InterfaceComponent implements OnInit, AfterViewInit {
+export class InterfaceComponent implements OnInit{
 
   /** Event triggered when the user chooses to change the Highlighting of
    *  branches */
@@ -52,7 +52,7 @@ export class InterfaceComponent implements OnInit, AfterViewInit {
 
   /** Reference to the Select item in the Template, available for the user to
    *  choose an element to remove from the visualization */
-  @ViewChild('removeDendrogramSelect', {static: false}) removeDendrogramSelect: ElementRef;
+  // @ViewChild('removeDendrogramSelect', {static: false}) removeDendrogramSelect: ElementRef;
 
   /** Reference to the Select item in the Template, available for the user to
    *  choose the type of highlighting to be used on matched Dendrogram clusters.
@@ -60,11 +60,11 @@ export class InterfaceComponent implements OnInit, AfterViewInit {
    *  none - (no highlight),
    *  diff - (highlight the differences in the branches) or
    *  simi - (highlight the similarities in the branches) */
-  @ViewChild('highlightTypeSelect', {static: false}) highlightTypeSelect: ElementRef;
+  // @ViewChild('highlightTypeSelect', {static: false}) highlightTypeSelect: ElementRef;
 
   /** Reference to the Select item in the Template, available for the user to
    *  horizontally flip a specific Dendrogram structure */
-  @ViewChild('flipDendrogramSelect', {static: false}) flipDendrogramSelect: ElementRef;
+  // @ViewChild('flipDendrogramSelect', {static: false}) flipDendrogramSelect: ElementRef;
 
   /** the names of the dendrogram structures currently on display */
   private dendrogramNames: string[];
@@ -77,7 +77,9 @@ export class InterfaceComponent implements OnInit, AfterViewInit {
   /** Name used for each different type of match between similar clusters */
   private matchLabels: any;
   /** Currently selected type of match strategy for similar clusters */
-  private matchType: number;
+  private matchType: string;
+  /** Currently selected highlight of branches for matching clusters */
+  private highlightType: string;
 
   /** The minimum number of leaves used by the cluster matching routine */
   private sampleSize: number;
@@ -105,23 +107,20 @@ export class InterfaceComponent implements OnInit, AfterViewInit {
     // from an enum type
     this.matchLabels = ClusterMatchEnum;
     this.matchKeys = Object.keys(ClusterMatchEnum).filter(Number);
-    this.matchType = ClusterMatchEnum.BIOISOMORPHIC;
-  }
+    this.matchType = ""+ClusterMatchEnum.BIOISOMORPHIC;
+    this.highlightType = "none";
 
-  /**
-   * Initialization of views to Template elements
-   */
-  ngAfterViewInit(){
-    // by default, branches in matched clusters are not highlighted
-    this.highlightTypeSelect.nativeElement.selectedIndex = 0;
+    // console.log('ngoninit', this.highlightTypeSelect);
   }
 
   /**
    * Request the main application to change the type of highlighting used on the
    * branches of matching clusters.
    */
-  public changeHighlightType(): void{
-    this.changeHighlightTypeEmitter.emit(this.highlightTypeSelect.nativeElement.value);
+  public changeHighlightType(event): void{
+    console.log("changehighlighttyoe", event);
+    this.changeHighlightTypeEmitter.emit(event.value);
+    // this.changeHighlightTypeEmitter.emit(this.highlightTypeSelect.nativeElement.value);
   }
 
   /**
@@ -131,7 +130,7 @@ export class InterfaceComponent implements OnInit, AfterViewInit {
    * @param {object} event The DOM event that triggered the call
    */
   public changeMatchType(event: any): void{
-    this.changeMatchTypeEmitter.emit(Number(event.target.value));
+    this.changeMatchTypeEmitter.emit(Number(event.value));
   }
 
   /**
@@ -142,21 +141,27 @@ export class InterfaceComponent implements OnInit, AfterViewInit {
    * @param {object} event The DOM event generated on user interaction
    */
   public changeSampleSize(event: any): void{
-    this.changeSampleSizeEmitter.emit(Number(event.target.value));
+    console.log("changesamplesize", event);
+    //this.changeSampleSizeEmitter.emit(Number(event.target.value));
+    this.changeSampleSizeEmitter.emit(this.sampleSize);
   }
 
   /**
    * Request the application to horizontally flip the Dendrogram structure
    * selected by the user.
+   *
+   * @type {MatSelectChange}
+   * @param {MatSelectChange} event The angular event generated on user interaction
    */
-  public flipDendrogram(): void{
+  public flipDendrogram(event: any): void{
     // capture the index of the option selected
-    var index: number = this.flipDendrogramSelect.nativeElement.selectedIndex-1;
+    let index: number = event.value;
+    // return in case undefined is used
+    if( index === undefined ) return;
     // trigger the flip of the corresponding element in the parent application
-    if( index>= 0 )
-      this.flipDendrogramEmitter.emit(index);
+    this.flipDendrogramEmitter.emit(index);
     // reset the selection
-    this.flipDendrogramSelect.nativeElement.selectedIndex = 0;
+    event.source.value = undefined;
   }
 
   /**
@@ -193,7 +198,8 @@ export class InterfaceComponent implements OnInit, AfterViewInit {
    * case no highlight has been selected
    */
   public getHighlightType(): string{
-    return this.highlightTypeSelect.nativeElement.value;
+    // return this.highlightTypeSelect.nativeElement.value;
+    return this.highlightType;
   }
 
   /**
@@ -204,7 +210,7 @@ export class InterfaceComponent implements OnInit, AfterViewInit {
    * strategy. The values returned are taken from the ClusterMatchEnum type.
    */
   public getMatchType(): number{
-    return this.matchType;
+    return Number(this.matchType);
   }
 
   /**
@@ -227,11 +233,13 @@ export class InterfaceComponent implements OnInit, AfterViewInit {
    * function
    */
   public loadDendrogram(event: any): void{
-    var file: any = event.target.files[0];
+    let file: any = event.target.files[0];
     // trig an event in the main application to load the dendrogram
     this.loadDendrogramEmitter.emit(file);
     // add an option to Remove and Flip selection lists
     this.dendrogramNames.push(file.name);
+    // reset the value
+    event.target.value = "";
   }
 
   /**
@@ -239,13 +247,16 @@ export class InterfaceComponent implements OnInit, AfterViewInit {
    * structure. It also removes the name of such structure from the local list
    * of loaded Dendrograms.
    */
-  public removeDendrogram(): void{
+  public removeDendrogram(event: any): void{
     // capture the index of the option selected
-    var index: number = this.removeDendrogramSelect.nativeElement.selectedIndex-1;
+    let index:number = event.value;
+    // return in case an undefined value is to be eliminated
+    if (index === undefined) return ;
     // trigger the removal of the element from the parent application
     this.removeDendrogramEmitter.emit(index);
     // remove the option from Remove and Flip select items
     this.dendrogramNames.splice(index,1);
+    event.source.value = undefined;
   }
 
   /**
@@ -283,12 +294,13 @@ export class InterfaceComponent implements OnInit, AfterViewInit {
    */
   public sortDendrogram(event: any): void{
     // capture the index of the option selected
-    var index: number = event.target.selectedIndex-1;
+    let index: number = event.value;
+    if( index === undefined ) return;
     // trigger the flip of the corresponding element in the parent application
     this.sortDendrogramEmitter.emit(index);
     // clear the option from the component and allow the user to select a
     // different structure to sort
-    event.target.selectedIndex = 0;
+    event.source.value = undefined;
   }
 
   /**
@@ -298,6 +310,14 @@ export class InterfaceComponent implements OnInit, AfterViewInit {
    * @param {object} event The event generated by the user's interaction
    */
   public toggleDisplayMatches(event: any): void{
+    this.displayMatches = event.checked;
     this.toggleDisplayMatchesEmitter.emit(this.displayMatches);
+  }
+
+  /**
+   *
+   */
+  goToLink(url:string){
+    window.open(url, "_blank");
   }
 }

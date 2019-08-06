@@ -87,7 +87,7 @@ export class CanvasComponent implements OnInit {
    */
   ngOnInit() {
     /* initialize the canvas as a D3 visualization element */
-    this._display = d3.select('svg');
+    this._display = d3.select('svg#display');
 
     /* initialize the width of a single Dendrogram graph */
     this._dendroWidth = this.LEFT_PADDING + this.RIGHT_PADDING + this.GRAPH_WIDTH + this.LABEL_WIDTH;
@@ -577,6 +577,8 @@ export class CanvasComponent implements OnInit {
     var idx = 0;
     var colors = {};
     var scheme = d3.schemeSet1;
+
+    console.log('updateClusterMatches', this._matches);
 
     // go through the matches between every dendrogram pair
     for(var i=0; i<this._matches.length; ++i){

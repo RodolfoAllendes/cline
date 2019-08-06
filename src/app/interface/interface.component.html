@@ -1,126 +1,219 @@
+<mat-toolbar color="primary">
+  <mat-toolbar-row>
+    <span>
+      CLINE: Comparison of bioLogIcal deNdrogram structurEs
+    </span>
+    <span class=spaceFiller></span>
+
+    <span>
+      <button mat-icon-button [matMenuTriggerFor]="saveMenu">
+        <mat-icon>save_alt</mat-icon>
+      </button>
+    </span>
+    <span>
+      <button mat-icon-button [matMenuTriggerFor]="infoMenu">
+        <mat-icon>info</mat-icon>
+      </button>
+    </span>
+    <span>
+      <button mat-icon-button [matMenuTriggerFor]="helpMenu">
+        <mat-icon>help_outline</mat-icon>
+      </button>
+    </span>
+  </mat-toolbar-row>
+</mat-toolbar>
+
+<mat-menu #saveMenu="matMenu">
+  <button
+    id = "savePNG"
+    mat-menu-item
+    (click) = "savePNG($event)"
+  >
+    <mat-icon>image</mat-icon>
+    <span>Save as PNG</span>
+  </button>
+  <button
+    id = "saveSVG"
+    mat-menu-item
+    (click) = "saveSVG($event)"
+  >
+    <mat-icon>image</mat-icon>
+    <span>Save as SVG</span>
+  </button>
+</mat-menu>
+
+<mat-menu #infoMenu="matMenu">
+  <a
+    mat-menu-item
+    (click)="goToLink('http://mizuguchilab.org/cline/cline_supplementary.pdf')">
+    <mat-icon>insert_drive_file</mat-icon>
+    <span>User Guide</span>
+  </a>
+  <a
+    mat-menu-item
+    href="https://mizuguchilab.org/cline/test-data.zip">
+    <mat-icon>folder</mat-icon>
+    <span>Sample Data</span>
+  </a>
+</mat-menu>
+
+<mat-menu #helpMenu="matMenu">
+  <a
+    mat-menu-item
+    (click)="goToLink('https://mizuguchilab.org/tools/cline-2/')">
+    <mat-icon>link</mat-icon>
+    <span>Cline website</span>
+  </a>
+  <a
+    mat-menu-item
+    (click)="goToLink('https://github.com/RodolfoAllendes/cline')">
+    <mat-icon>cloud_download</mat-icon>
+    <span>GitHub Repository</span>
+  </a>
+
+</mat-menu>
+
 <!--
   Options related to manipulating the list of dendrograms, or individual
   structures
 -->
-<fieldset>
-  <legend>Dendrogram Manipulation</legend>
+<mat-expansion-panel [expanded]="true">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Dendrogram Structures
+    </mat-panel-title>
+    <mat-panel-description>
+      Load, remove and modify the display of Dendrograms
+    </mat-panel-description>
+  </mat-expansion-panel-header>
 
   <!-- Add a new dendrogram to the visualization -->
-  <label>Load Dendrogram:</label>
-  <input
-    id="loadDendrogramInput"
-    type="file"
-    accept="text/plain"
-    (change)="loadDendrogram($event)"
-  />
-
-  <!-- Remove a dendrogram from the visualization -->
-  <label>Remove Dendrogram:</label>
-  <select #removeDendrogramSelect
-    id="removeDendrogramSelect"
-    (change)="removeDendrogram()"
+  <button mat-button
+    color="primary"
+    (click)="fileInput.click()"
   >
-    <option>Select...</option>
-    <option *ngFor="let item of dendrogramNames"
-      [value]="item"
-      [label]="item"
-    >{{item}}
-    </option>
-  </select>
+    <input #fileInput
+      id="loadDendrogramInput"
+      type="file"
+      style="display: none;"
+      accept="text/plain"
+      (change)="loadDendrogram($event)"
+    />
+    Load Dendrogram
+  </button>
+  <!-- <br /> -->
+  <!-- Remove a dendrogram from the visualization -->
+  <mat-form-field>
+    <mat-label>Remove Dendrogram:</mat-label>
+    <mat-select
+      id = 'removeDendrogramSelect'
+      (selectionChange)="removeDendrogram($event)"
+    >
+      <mat-option *ngFor="let item of dendrogramNames; let i=index;"
+        [value]="i"
+      >{{item}}
+    </mat-option>
+    </mat-select>
+  </mat-form-field>
 
   <!-- Horizontally flip the selected dendrogram -->
-  <label>Flip Dendrogram:</label>
-  <select #flipDendrogramSelect
-    id="flipDendrogramSelect"
-    (change)="flipDendrogram()"
-  >
-    <option>Select...</option>
-    <option *ngFor="let item of dendrogramNames"
-      [value]="item"
-      [label]="item"
-    >{{item}}
-    </option>
-  </select>
+  <mat-form-field>
+    <mat-label>Flip Dendrogram:</mat-label>
+    <mat-select
+      id="flipDendrogramSelect"
+      (selectionChange)="flipDendrogram($event)"
+    >
+      <mat-option *ngFor="let item of dendrogramNames; let i=index;"
+        [value]="i"
+      >{{item}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
 
   <!-- Sort the branches of the selected dendrogram -->
-  <label>Sort Dendrogram:</label>
-  <select
-    name="sortDendro"
-    (change)="sortDendrogram($event)"
-  >
-    <option>Select...</option>
-    <option *ngFor="let item of dendrogramNames"
-      [value]="item"
-      [label]="item"
-    >{{item}}
-    </option>
-  </select>
-</fieldset>
+  <mat-form-field>
+    <mat-label>Sort Dendrogram:</mat-label>
+    <mat-select
+      id = "sortDendrogramSelect"
+      (selectionChange)="sortDendrogram($event)"
+    >
+      <mat-option *ngFor="let item of dendrogramNames; let i=index;"
+        [value]="i"
+      >{{item}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
 
+</mat-expansion-panel>
 
 <!--
   Interaction related to the display and selection of cluster matching
   algorithms
 -->
-<fieldset>
+<mat-expansion-panel [expanded]="true">
+  <mat-expansion-panel-header>
+    <mat-panel-title>
+      Cluster Matching
+    </mat-panel-title>
+    <mat-panel-description>
+      Enable/Disable display and choose type of cluster matches
+    </mat-panel-description>
+  </mat-expansion-panel-header>
   <!-- Toggle on/off the display of lines between matching clusters -->
-  <label>Display Cluster Matches</label>
-  <input
-    id="displayMatchesCheckbox"
-    type="checkbox"
-    [(ngModel)]="displayMatches"
-    (change)="toggleDisplayMatches($event)"
-  />
+  <mat-checkbox
+    id = 'displayMatchesCheckbox'
+    [(checked)] = 'displayMatches'
+    (change) = 'toggleDisplayMatches($event)'
+  >
+    Display Cluster Matches
+  </mat-checkbox>
   <br />
 
   <!-- Choose the type of cluster matching algorithm used by the application -->
-  <label>Cluster Match:</label>
-  <select
-    id="matchTypeSelect"
-    [(ngModel)]="matchType"
-    (change)="changeMatchType($event)"
-  >
-    <option *ngFor="let key of matchKeys"
-      [value]="key"
-      [label]="matchLabels[key]"
-    >{{matchLabels[key]}}
-    </option>
-  </select>
+  <mat-form-field>
+    <mat-label>Cluster Match Type:</mat-label>
+    <mat-select
+      id="matchTypeSelect"
+      [(value)]="matchType"
+      (selectionChange)="changeMatchType($event)"
+    >
+      <mat-option *ngFor="let key of matchKeys"
+        [value]="key"
+      >{{matchLabels[key]}}
+      </mat-option>
+    </mat-select>
+  </mat-form-field>
 
+  <!-- Choose the highlighting applied to matched clusters -->
+  <mat-form-field>
+    <mat-label>Branch Highlighting:</mat-label>
+    <mat-select
+      id="highlightTypeSelect"
+      [(value)]="highlightType"
+      (selectionChange)="changeHighlightType($event)"
+    >
+      <mat-option value="none">None</mat-option>
+      <mat-option value="simi">Equal</mat-option>
+      <mat-option value="diff">Different</mat-option>
+    </mat-select>
+  </mat-form-field>
   <!--
     Choose the minimum of children a node needs to have in order to be
     considered for cluster matching
   -->
-  <label>Sample Size:</label>
-  <input
-    id="sampleSizeInput"
-    type="number"
-    ng-pattern="/^[0-9]+$/"
-    value={{sampleSize}}
-    [(ngModel)]="sampleSize"
-    step="1"
-    min="2"
-    (change)="changeSampleSize($event)"
-  />
+  <mat-form-field>
+    <input matInput
+      id="sampleSizeInput"
+      type="number"
+      ng-pattern="/^[0-9]+$/"
+      value={{sampleSize}}
+      [(ngModel)]="sampleSize"
+      step="1"
+      min="2"
+      (change)="changeSampleSize($event)"
+      placeholder="Min. cluster size"
+    />
+    <mat-hint align="start">Only numbers</mat-hint>
 
-  <br />
-
-  <!-- Choose the type of highlighting that should be applied to matched
-  clusters -->
-  <label>Highlight:</label>
-    <select #highlightTypeSelect
-      id="highlightTypeSelect"
-      (change)="changeHighlightType()"
-    >
-    <option value="none">None</option>
-    <option value="simi">Equal</option>
-    <option value="diff">Different</option>
-  </select>
-
-</fieldset>
-
-<div>
-  <button id='savePNG' (click)="savePNG($event)">Export PNG</button>
-
-  <button id="saveSVG" (click)="saveSVG($event)">Export SVG</button>
-</div>
+  </mat-form-field>
+</mat-expansion-panel>

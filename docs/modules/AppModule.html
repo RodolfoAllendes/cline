@@ -80,14 +80,14 @@
                         <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#xs-components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+                                        data-target="#xs-components-links-module-AppModule-8c85320100c02d27ee45e84ea7e0c3b2"
                                     >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="xs-components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+                                        id="xs-components-links-module-AppModule-8c85320100c02d27ee45e84ea7e0c3b2"
                                     >
                                         <li class="link">
                                             <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
@@ -238,14 +238,14 @@
                         <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+                                        data-target="#components-links-module-AppModule-8c85320100c02d27ee45e84ea7e0c3b2"
 >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+                                        id="components-links-module-AppModule-8c85320100c02d27ee45e84ea7e0c3b2"
 >
                                         <li class="link">
                                             <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
@@ -501,6 +501,18 @@
 import { BrowserModule, Title } from &#x27;@angular/platform-browser&#x27;;
 import { FormsModule } from &#x27;@angular/forms&#x27;;
 
+// for material use in forms
+import { BrowserAnimationsModule } from &#x27;@angular/platform-browser/animations&#x27;;
+import { MatExpansionModule } from &#x27;@angular/material/expansion&#x27;;
+import { MatFormFieldModule } from &#x27;@angular/material&#x27; ;
+import { MatSelectModule } from &#x27;@angular/material/select&#x27;;
+import { MatCheckboxModule } from &#x27;@angular/material/checkbox&#x27;;
+import { MatButtonModule } from &#x27;@angular/material/button&#x27;;
+import { MatSidenavModule } from &#x27;@angular/material/sidenav&#x27;;
+import { MatToolbarModule, MatIconModule } from &#x27;@angular/material&#x27;;
+import { MatMenuModule } from &#x27;@angular/material/menu&#x27;;
+import { MatInputModule } from &#x27;@angular/material/input&#x27;;
+
 import { AppComponent } from &#x27;./app.component&#x27;;
 import { InterfaceComponent } from &#x27;./interface/interface.component&#x27;;
 import { CanvasComponent } from &#x27;./canvas/canvas.component&#x27;;
@@ -513,7 +525,18 @@ import { CanvasComponent } from &#x27;./canvas/canvas.component&#x27;;
   ],
   imports: [
     BrowserModule,
-    FormsModule
+    FormsModule,
+    BrowserAnimationsModule,
+    MatExpansionModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatCheckboxModule,
+    MatButtonModule,
+    MatSidenavModule,
+    MatToolbarModule,
+    MatIconModule,
+    MatMenuModule,
+    MatInputModule
   ],
   providers: [
     Title

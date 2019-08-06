@@ -80,14 +80,14 @@
                         <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#xs-components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+                                        data-target="#xs-components-links-module-AppModule-8c85320100c02d27ee45e84ea7e0c3b2"
                                     >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="xs-components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+                                        id="xs-components-links-module-AppModule-8c85320100c02d27ee45e84ea7e0c3b2"
                                     >
                                         <li class="link">
                                             <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
@@ -238,14 +238,14 @@
                         <a href="modules/AppModule.html" data-type="entity-link">AppModule</a>
                             <li class="chapter inner">
                                 <div class="simple menu-toggler" data-toggle="collapse"
-                                        data-target="#components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+                                        data-target="#components-links-module-AppModule-8c85320100c02d27ee45e84ea7e0c3b2"
 >
                                     <span class="fa fa-fw fa-cogs"></span>
                                     <span>Components</span>
                                     <span class="fa fa-angle-down"></span>
                                 </div>
                                 <ul class="links collapse"
-                                        id="components-links-module-AppModule-5b6d8bf738d23a89a72139b5685063ea"
+                                        id="components-links-module-AppModule-8c85320100c02d27ee45e84ea7e0c3b2"
 >
                                         <li class="link">
                                             <a href="components/AppComponent.html" data-type="entity-link" data-context="sub-entity" data-context-id="modules">AppComponent</a>
@@ -1717,9 +1717,9 @@ export class AppComponent {
   private _title: string &#x3D; &quot;Dendrogram (Sub)Cluster Match Visualization System&quot;;
 
   /** link to the canvas element where the visualization takes place */
-  @ViewChild(&#x27;canvas&#x27;) _canvas: CanvasComponent;
+  @ViewChild(&#x27;canvas&#x27;, {static: false}) _canvas: CanvasComponent;
   /** link to the interface component */
-  @ViewChild(&#x27;interface&#x27;) _interface: InterfaceComponent;
+  @ViewChild(&#x27;interface&#x27;, {static: false}) _interface: InterfaceComponent;
 
   /**
    * Handle the changing of higlighting options for edges in matching sub-
@@ -1994,7 +1994,6 @@ export class AppComponent {
     <div class="tab-pane fade " id="c-templateData">
         <pre class="line-numbers"><code class="language-html">&lt;!--The content below is only a placeholder and can be replaced.--&gt;
 &lt;div style&#x3D;&quot;text-align:center&quot;&gt;
-  &lt;h1&gt;CLINE: A web-tool for the Comparison of Biological Dendrogram Structures&lt;/h1&gt;
 
   &lt;app-interface #interface
     (loadDendrogramEmitter)&#x3D;&quot;onLoadDendro($event)&quot;
@@ -2010,6 +2009,7 @@ export class AppComponent {
     (saveSVGEmitter)&#x3D;&quot;onSaveSVG($event)&quot;
   &gt;
   &lt;/app-interface&gt;
+  &lt;br /&gt;
   &lt;app-canvas #canvas
     (changeCutoffEmitter)&#x3D;&quot;onChangeCutoff($event)&quot;
     [_dendrograms]&#x3D;&quot;_dendrograms&quot; &gt;
@@ -2043,7 +2043,7 @@ export class AppComponent {
 <script src="../js/libs/htmlparser.js"></script>
 <script src="../js/libs/deep-iterator.js"></script>
 <script>
-        var COMPONENT_TEMPLATE = '<div><!--The content below is only a placeholder and can be replaced.--><div style="text-align:center">  <h1>CLINE: A web-tool for the Comparison of Biological Dendrogram Structures</h1>  <app-interface #interface    (loadDendrogramEmitter)="onLoadDendro($event)"    (changeSampleSizeEmitter)="onChangeSampleSize($event)"    (removeDendrogramEmitter)="onRemoveDendro($event)"    (flipDendrogramEmitter)="onFlipDendrogram($event)"    (sortDendrogramEmitter)="onSortDendro($event)"    (toggleDisplayMatchesEmitter)="onToggleDisplayMatches($event)"    (changeMatchTypeEmitter)="onChangeMatchType($event)"    (changeHighlightTypeEmitter)="onChangeHighlightType($event)"    (savePNGEmitter)="onSavePNG($event)"    (savePDFEmitter)="onSavePDF($event)"    (saveSVGEmitter)="onSaveSVG($event)"  >  </app-interface>  <app-canvas #canvas    (changeCutoffEmitter)="onChangeCutoff($event)"    [_dendrograms]="_dendrograms" >  </app-canvas></div></div>'
+        var COMPONENT_TEMPLATE = '<div><!--The content below is only a placeholder and can be replaced.--><div style="text-align:center">  <app-interface #interface    (loadDendrogramEmitter)="onLoadDendro($event)"    (changeSampleSizeEmitter)="onChangeSampleSize($event)"    (removeDendrogramEmitter)="onRemoveDendro($event)"    (flipDendrogramEmitter)="onFlipDendrogram($event)"    (sortDendrogramEmitter)="onSortDendro($event)"    (toggleDisplayMatchesEmitter)="onToggleDisplayMatches($event)"    (changeMatchTypeEmitter)="onChangeMatchType($event)"    (changeHighlightTypeEmitter)="onChangeHighlightType($event)"    (savePNGEmitter)="onSavePNG($event)"    (savePDFEmitter)="onSavePDF($event)"    (saveSVGEmitter)="onSaveSVG($event)"  >  </app-interface>  <br />  <app-canvas #canvas    (changeCutoffEmitter)="onChangeCutoff($event)"    [_dendrograms]="_dendrograms" >  </app-canvas></div></div>'
     var COMPONENTS = [{'name': 'AppComponent', 'selector': 'app-root'},{'name': 'CanvasComponent', 'selector': 'app-canvas'},{'name': 'InterfaceComponent', 'selector': 'app-interface'}];
     var DIRECTIVES = [];
     var ACTUAL_COMPONENT = {'name': 'AppComponent'};

@@ -76,7 +76,7 @@ export class Dendrogram{
     // we start by checking the current node is not a leaf, nor is below the
     // level where it is considered a trivial cluster
     if( node.value < minChildren )
-      return null;
+      return [];
 
     // check if there is a match for node within the other Dendrogram
     var match: any = this._matchCluster(node, other, minChildren);

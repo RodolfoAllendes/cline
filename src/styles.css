@@ -1,11 +1,21 @@
+@import '@angular/material/prebuilt-themes/deeppurple-amber.css';
+
 /* You can add global styles to this file, and also import other style files */
 h1{
   color: #84c754;
 }
 
-svg{
+/* svg{
   border: 2px dotted #84c754;
   background-color: white;
+} */
+
+mat-form-field{
+  padding: 0px 10px 0px 10px;
+}
+
+span.spaceFiller{
+  flex: 1 1 auto;
 }
 
 text{
