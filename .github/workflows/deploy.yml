@@ -41,7 +41,6 @@ jobs:
             --output-hashing all \
             --extract-css \
             --named-chunks false \
-            --aot \
             --vendor-chunk
 
       - name: Upload Pages artifact
