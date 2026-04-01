@@ -46,7 +46,7 @@ jobs:
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: dist/cline
+          path: dist/dendrogram
 
   deploy:
     environment:
